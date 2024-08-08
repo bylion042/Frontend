@@ -370,13 +370,13 @@ button img {
 
 
 
-/* .join-section2{
+.join-section2{
     display: flex;
-    gap: 20rem;
+    gap: 12rem;
 }
-.join-section2 img{
+.join-section2-img{
     padding: 0 40px;
-    max-width: 250%;
+    margin-left: 4rem;
 }
 .join-section2 .hold{
    padding: 0 40px;
@@ -387,176 +387,56 @@ button img {
 }
 #who-we-are{
    border-bottom: 2px solid #B6B6B6;
-   padding: 20px;
-}
+} 
 #who-we-are h2{
-    margin-top: 2rem    ;
     margin-bottom: 40px;
     color: #0D5F8E;
     font-size: xx-large;
-}
-#who-we-are p{
+} #who-we-are p{
     color: #0A4A6E;
     font-size: larger;
-}
-#who-we-are .btn4 {
+} 
+ #who-we-are .btn4 {
     border: none;
     background: #E6EDEE;
     border-radius: 40px;
     padding: 5px;
     display: flex;
     gap: 10px;
-    width: 466px;
-}
+    width: 425px;
+} 
 .btn4 button {
-   padding: 25px 40px;
+   padding: 23px 30px;
    font-size: larger;
    font-weight: bold;
    border-radius: 40px;
    border: none;
    background: #FAFCFE;
    color: #107AB6;
-}
+} 
 .btn4 .highlight {
     background: #1286C8;
     border: none;
     color: #FFFFFF;
-}
+} 
     
-#offer{
-    padding: 20px; 
-}
 #offer h2{
     color: #0D5F8E;
-    padding: 50px 0;
+    padding: 70px 0;
     font-size: xx-large;
+    margin: 0;
 }
-#offer ul {
-    list-style-type: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: #4e4c4c;
+
+#offer p{
+    margin-bottom: 50px;
+    display: flex;   
+    font-size: 22px;
+    gap: 2rem;
 }
-#offer li {
-    padding: 15px 0;
-    margin-bottom: 10px;
-    display: flex;
-    font-size: 23px;
-}
-#offer li strong{
+#offer  strong{
     padding: 25px 0 0;
     color: #656C77;
-}
-#offer ul li img{
-    width: 10rem;
-} */
-.join-section2 {
-    display: flex;
-    gap: 2rem; /* Reduced gap to bring the sections closer */
-    align-items: stretch; /* Ensures sections align to the same height */
-}
-
-.join-section2 img {
-    width: 100%; /* Make image scale to its container */
-    height: 100%; /* Ensure the image fills its section */
-    object-fit: cover; /* Maintain aspect ratio of image */
-    max-width: 100%; /* Keep the image within its container */
-    padding: 0; /* Remove any extra padding */
-}
-
-.join-section2 .hold {
-    padding: 0 20px;
-    flex: 1; /* Allow this section to take up the remaining space */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.hold {
-    max-width: 100%; /* Ensure it doesn't exceed container width */
-}
-
-#who-we-are {
-    border-bottom: 2px solid #B6B6B6;
-    padding: 20px;
-    flex: 1; /* Allow flexibility in height */
-}
-
-#who-we-are h2 {
-    margin-top: 2rem;
-    margin-bottom: 40px;
-    color: #0D5F8E;
-    font-size: xx-large;
-}
-
-#who-we-are p {
-    color: #0A4A6E;
-    font-size: larger;
-}
-
-#who-we-are .btn4 {
-    background: #E6EDEE;
-    border-radius: 40px;
-    padding: 5px;
-    display: flex;
-    gap: 10px;
-    width: 100%; /* Make button container full width */
-}
-
-.btn4 button {
-    padding: 25px 40px;
-    font-size: larger;
-    font-weight: bold;
-    border-radius: 40px;
-    border: none;
-    background: #FAFCFE;
-    color: #107AB6;
-    flex: 1; /* Allow buttons to take equal space */
-}
-
-.btn4 .highlight {
-    background: #1286C8;
-    border: none;
-    color: #FFFFFF;
-}
-
-#offer {
-    padding: 20px;
-    flex: 1; /* Allow flexibility in height */
-}
-
-#offer h2 {
-    color: #0D5F8E;
-    padding: 50px 0;
-    font-size: xx-large;
-}
-
-#offer ul {
-    list-style-type: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: #4e4c4c;
-}
-
-#offer li {
-    padding: 15px 0;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center; /* Aligns content centrally */
-    font-size: 23px;
-}
-
-#offer li strong {
-    padding: 25px 0 0;
-    color: #656C77;
-    margin-left: 15px; /* Adds space between icon and text */
-}
-
-#offer ul li img {
-    width: 3rem; /* Adjusted to a smaller, consistent size */
-    height: 3rem;
-}
-
+} 
 
 
 
@@ -890,4 +770,14 @@ button img {
     margin-top: 2rem;
     padding-top: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+/* responsiveness */
+
+@media (max-width: 477px) { 
+
 }
