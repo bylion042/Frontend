@@ -1,0 +1,562 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+header {
+    padding:  5px 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.search-and-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+.search-container img{
+    position: absolute;
+    top: 50%;
+    left: 8rem;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+.search-container input {
+    padding-left: 50px;
+    font-size: larger;
+    padding: 20px 10rem;
+    border-radius: 30px;
+    background: #F4F5F6;
+    border: none;
+}
+.search-and-buttons{
+    gap: 5px;
+    padding: 5px;
+    border-radius: 30px;
+    background: #F4F5F6 ;
+    display: flex;
+    justify-content: space-around;
+}
+.search-and-buttons button {
+    padding: 20px 20px;
+    border: none;
+    color: #1286C8;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 30px;
+    background: #FFFFFF;
+}
+
+.search-and-buttons button.highlight {
+    background-color: #1286C8;
+    color: #fff;
+}
+
+/* Existing styles */
+nav ul {
+    padding: 15px;
+    margin: 0rem auto;
+    background: #e7f3fa;
+    gap: 6rem;
+    width: 85%;
+    display: flex; 
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+nav ul li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: larger;
+}
+nav ul li.active {
+    border-bottom: 3px solid #60AEDA;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #0a4a63;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+
+
+
+/*  ALL ABOUT CONTACT US  */
+
+.need-help {
+    text-align: center;
+    background: url(../pro-health-PNG/Frame\ 213\ \(1\).png);
+    height: 22rem;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service{
+    align-items: center;
+}
+.service h2{
+    padding: 1rem 0;
+    margin-top: 6rem;
+    color: #0D5F8E;
+    font-size: 3rem;
+}
+.service h3{
+    color: #0D5F8E;
+    font-size: 25px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5rem;
+}
+
+.service-item {
+    padding: 1rem;
+    width: 30%;
+}
+
+
+
+/* ALL ABOUT HEALTH CONSULTATION  */
+
+main {
+    padding: 2rem;
+    margin-top: 20rem;
+    position: relative;
+}
+.information{
+    background: #107AB6;
+    color: #fff;
+    padding: 5rem 5rem;
+    display: flex;
+    gap: 30rem;
+    display: flex;
+}
+.contact-details h3{
+    font-size: x-large;
+    font-weight: 500;
+}
+.contact-details h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.contact-details p{
+   font-size: larger;
+}
+.quality .edit{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+
+/* ALL ABOUT CONTACT FORM  */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+.contact-form form p {
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: bold; 
+    font-size: larger;
+}
+.contact-form form{
+    padding: 40px 30px;
+}
+.contact-form form input, .contact-form form textarea {
+    margin-bottom: 15px;
+    padding:25px;
+    border: none;
+    border-radius: 4px;
+    background: #F4F5F6;
+    font-size: larger;
+}
+.contact-form form button {
+    padding: 20px 15rem;
+    background-color: #1286C8;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+}
+.contact-form form button:hover {
+    background-color: #005bb5;
+}
+
+
+
+
+
+
+/* ALL ABOUT SUPPORT  */
+
+.container3 {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    gap: 10rem;
+}
+.faq-section {
+    flex: 1;
+    width: 900px;
+}
+
+.faq-section .support {
+    color: #1286C8;
+    padding: 1rem 0;
+}
+.faq-section h2{
+    font-size: xx-large;
+}
+.faq-section h3 {
+    color: #007bff;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #107AB6;
+}
+.faq-section p {
+    margin-bottom: 3rem;
+    font-size: larger;
+}
+.faq-item {
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-size: x-large;
+    color: #434343;
+
+}
+.faq-question {
+    padding: 20px ;
+    cursor: pointer;
+    border-bottom: 1px solid #CBD0D7;
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    align-items: center;
+}
+.faq-question strong{
+    font-size: xx-large;
+    color: #3C4047;
+    font-weight: 500;
+}
+
+/* .active {
+    padding: 2rem 1rem 0;
+    background-color: #E7F3FA;
+    border: none;
+}
+.active img{
+    margin-bottom: 7px;
+}
+.active span{
+    margin-left: 1rem;
+    font-weight: bold;
+} */
+.faq-answer {
+    padding: 20px;
+    font-size: 15px;
+    background-color: #E7F3FA;
+    display: flex;
+    gap: 20px;
+}
+.faq-answer p {
+    margin: 0;
+    font-size: larger;
+}
+.faq-answer p a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #107AB6;
+}
+.contact-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #DCDFE4;
+    height: 27rem;
+    margin: 20em 0 0 0;
+    margin-right: 10rem;
+}
+.contact-section h3 {
+    color: #007bff;
+    margin-left: 2rem;
+    font-size: xx-large;
+    margin-top: 1rem;
+    color: #107AB6;
+    padding: 5px;
+}
+
+.contact-section p {
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: x-large;
+    color: #434343;
+}
+.contact-section h5{
+    color: #3C4047;
+    font-weight: bolder;
+    font-size: larger;
+}
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-section textarea {
+    resize: none;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: #F4F5F6;
+    font-size: x-large;
+}
+.contact-section form button {
+    padding: 20px;
+    color: #fff;
+    background-color: #1286C8;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+form button:hover {
+    background-color: #005bb5;
+}
+
+
+
+
+/* ALL ABOUT Wellness Article for You */
+
+.container4 {
+    width: 100%;
+    padding: 20px;
+}
+.articles h2 {
+    color: #1286C8;
+    font-size: xx-large ;
+    margin: 0 2rem;
+}
+.article {
+    display: inline-block;
+    width: 31%;
+    margin: 20px;
+    padding: 15px 0;
+    vertical-align: top;
+}
+.article img {
+    height: auto;
+    width: 100%;
+}
+.article h3 {
+    font-size: 1.4em;
+    margin: 20px 0;
+    color: #3C4047;
+}
+.article p {
+    font-size: 0.9em;
+    color: #3C4047;
+    font-size: larger;
+}
+
+
+.article .flex-img {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.article .flex-img a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: x-large;
+    color: #359EBB;
+}
+.article .flex-img a img {
+    width: 2rem;
+    margin-left: 1rem;
+}
+.article a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* ALL ABOUT FOOTER  */
+
+.footer {
+    background-color: #107AB6;
+    color: white;
+    padding: 40px 20px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+.footer-left section{
+    margin: 1rem 0;
+}
+.footer-left {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #EBF7FB;
+    font-size: larger;
+}
+.social-icons{
+    display: flex;
+    gap: 1rem;
+}
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+.footer-right {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 30rem;
+}
+.footer-links {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 700px;
+}
+.footer-links a {
+    color: white;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: larger;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.newsletter {
+    margin-bottom: 20px;
+}
+.newsletter h2 {
+    padding: 1rem 0;
+    margin-top: 35px;
+    color: #EBF7FB;
+}
+.newsletter p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #EBF7FB;
+    font-size: larger;
+}
+.form-content form input{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 35px;
+}
+.form-content button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+.form-content button:hover {
+    background-color: #003d82;
+}
+.hold-all{
+    display: flex;
+    gap:20rem;
+    margin-bottom: 2rem;
+}
+.newsletter form{
+    gap: 5px;
+    padding: 5px;
+    border-radius: 30px;
+    background: #CDD3D8;
+    display: flex;
+    justify-content: space-around;
+}
+.newsletter input{
+    padding: 0px 10px;
+    color: #656C77;
+    background: #FFFFFF;
+    font-size: larger;
+}
+.newsletter button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: larger;
+    color: #FFFFFF;
+    background: #1286C8;
+}
+.newsletter button:hover {
+    background: #107AB6;
+    color: #FFFFFF;
+}
+.img-contain{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    left: 20rem;
+}
+.img-contain .img1{
+    position: absolute;
+    right: 4rem;
+}
+.img-contain .img2{
+    position: absolute;
+    bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
