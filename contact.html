@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro-Health Contact</title>
     <link rel="stylesheet" href="./css-folder/contact.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
     
     <!-- ALL ABOUT HEADER  -->
+    <section class="tuggle">
+        <i class="fa-solid fa-bars"></i>
+    </section>
 
+
+    <!-- all about header  -->
     <header>
         <div class="header-content">
-            <img src="./pro-health-PNG/LOGO.png" alt="logo">
-            
+            <img src="./pro-health-PNG/LOGO.png" alt="logo" class="my-logo">
             <div class="search-container">
                 <img src="./pro-health-PNG/gala_search.png">
                 <input type="text" placeholder="Search related content">
-            </div>
-            
+            </div> <br>          
             <div class="search-and-buttons">
                 <button>Get answers</button>
                 <img src="./pro-health-PNG/Line 9.png" width="2rem" height="60rem">
@@ -28,37 +32,25 @@
     </header>
 
 
-    <!-- <section>
+
+    <!-- all about nav  -->
         <nav>
-            <ul>
-                <li><a href="#">Our Services</a> <i class="fa-solid fa-angle-down"></i></li>
+            <ul> 
+            <img src="./pro-health-PNG/LOGO.png" alt="logo" class="my-logo2">
+
+                <li><a href="./services.html">Our Services</a> <i class="fa-solid fa-angle-down"></i></li>
                 <li><a href="#">Our Physicians</a> <i class="fa-solid fa-angle-down"></i></li>
-                <li><a href="#">Health Information for Patients</a> <i class="fa-solid fa-angle-down"></i></li>
+                <li><a href="./home.html">Health Information for Patients</a> <i class="fa-solid fa-angle-down"></i></li>
                 <li><a href="#">About Us</a> <i class="fa-solid fa-angle-down"></i></li>
                 <li><a href="#">FAQs</a> <i class="fa-solid fa-angle-down"></i></li>
-                <li><a href="#">Need Help?</a> <i class="fa-solid fa-angle-down"></i></li>
+                <li><a href="./contact.html">Need Help?</a> <i class="fa-solid fa-angle-down"></i></li> 
             </ul>
         </nav>
-    </section> -->
-
-    <section>
-        <nav>
-            <ul>
-                <li><a href="#">Our Services</a> <i class="fa-solid fa-angle-down"></i></li>
-                <li><a href="#">Our Physicians</a> <i class="fa-solid fa-angle-down"></i></li>
-                <li><a href="#">Health Information for Patients</a> <i class="fa-solid fa-angle-down"></i></li>
-                <li><a href="#">About Us</a> <i class="fa-solid fa-angle-down"></i></li>
-                <li><a href="#">FAQs</a> <i class="fa-solid fa-angle-down"></i></li>
-                <li><a href="#">Need Help?</a> <i class="fa-solid fa-angle-down"></i></li>
-            </ul>
-        </nav>
-    </section>
 
 
 
 
-
-    <!-- ALL ABOU CONTACT US  -->
+    <!-- ALL ABOUt CONTACT US  -->
 
     <section class="need-help">
         <div class="service">
@@ -102,22 +94,22 @@
                     </div>
                 </div>
         
+
                 <div class="contact-form">
-                    <form action="#">
-                        <div></div> 
+                    <form id="contactForm">
+                        <div></div>
                         <p>First Name</p>
                         <input type="text" name="firstname" placeholder="First Name" required> <br>
-
+                
                         <p>Email Address</p>
                         <input type="email" name="email" placeholder="Email Address" required> <br>
-
+                
                         <p>Question / Feedback</p>
                         <textarea name="message" placeholder="Question / Feedback" required></textarea> <br>
-
-                        <button type="submit">Send Message</button> <br> <br> 
+                
+                        <button type="submit">Send Message</button> <br> <br>
                     </form>
                 </div>
-
             </div>
         </main>
 
@@ -148,7 +140,7 @@
 
         <div class="faq">
             <div class="faq-item">
-                <div class="active">
+                <div class="schedule-appointment">
                         <img src="./pro-health-PNG/Vector.png" width="20rem" height="3rem">
                         <span>  How do I schedule an appointment?</span>    
                 </div>
@@ -311,6 +303,8 @@
 
 
     <script src="https://kit.fontawesome.com/b3fa93e021.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
          <script src="./js-folder/contact.js"></script>
 </body>
 </html>

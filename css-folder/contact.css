@@ -5,10 +5,14 @@
 }
 body {
     font-family: Arial, sans-serif;
+    width: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    width: 100%;
+}
+
+/* ALL ABOUT HEADER  */
+.tuggle{
+    display: none;
 }
 
 header {
@@ -24,8 +28,6 @@ header {
     width: 100%;
     justify-content: space-between;
 }
-
-
 .search-and-buttons {
     display: flex;
     align-items: center;
@@ -41,6 +43,9 @@ header {
     left: 8rem;
     transform: translateY(-50%);
     color: #aaa;
+}
+.header-content section{
+    display: none;
 }
 .search-container input {
     padding-left: 50px;
@@ -73,8 +78,12 @@ header {
     background-color: #1286C8;
     color: #fff;
 }
+.search-and-buttons button.highlight:hover {
+    background: #005bb5;
+}
 
 /* Existing styles */
+
 nav ul {
     padding: 15px;
     margin: 0rem auto;
@@ -88,7 +97,7 @@ nav ul {
 nav ul li {
     list-style-type: none;
     font-weight: bold;
-    font-size: larger;
+    font-size: 20px;
 }
 nav ul li.active {
     border-bottom: 3px solid #60AEDA;
@@ -98,6 +107,9 @@ nav ul li a {
     color: #0a4a63;
     padding-bottom: 5px;
     position: relative;
+}
+.my-logo2{
+    display: none;
 }
 
 
@@ -111,8 +123,7 @@ nav ul li a {
     height: 22rem;
     position: absolute;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+
 }
 .service{
     align-items: center;
@@ -125,15 +136,8 @@ nav ul li a {
 }
 .service h3{
     color: #0D5F8E;
-    font-size: 25px;
+    font-size: xx-large;
 }
-
-.services-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 5rem;
-}
-
 .service-item {
     padding: 1rem;
     width: 30%;
@@ -176,6 +180,7 @@ main {
 
 
 /* ALL ABOUT CONTACT FORM  */
+
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -268,19 +273,17 @@ main {
     color: #3C4047;
     font-weight: 500;
 }
-
-/* .active {
-    padding: 2rem 1rem 0;
-    background-color: #E7F3FA;
-    border: none;
+.schedule-appointment{
+    background: #E7F3FA;
+    padding: 1rem;
 }
-.active img{
+.schedule-appointment img{
     margin-bottom: 7px;
 }
-.active span{
+.schedule-appointment span{
     margin-left: 1rem;
     font-weight: bold;
-} */
+}
 .faq-answer {
     padding: 20px;
     font-size: 15px;
@@ -560,3 +563,241 @@ form button:hover {
     padding-top: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+    /* all about heaf content  */
+.tuggle{
+    display: block;
+}
+header {
+    padding:  5px 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+}
+.header-content .my-logo{
+    margin-right: 10rem;
+    margin-bottom: 1rem;
+}
+.header-content section{
+    display: block;
+}
+.search-container img{
+    left: 2rem;
+}
+.search-container input {
+    padding: 15px 4rem;
+    border-radius: 25px;
+}
+.header-content{
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.search-and-buttons{
+    display: none;
+}
+    
+/* all about nav bar  */
+.tuggle{
+    font-size: xx-large;
+    color: #666869;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    
+
+}
+nav ul {
+    padding: 2rem 1rem;
+    background: #e7f3fa;
+    gap: 2rem;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+}
+ul li{
+    padding: 5px 0;
+}
+.my-logo2{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+
+
+/*  ALL ABOUT CONTACT US  */
+
+.need-help {
+    height: 15rem;
+    width: 100%;
+    position:static;
+}
+.service{
+
+    align-items: center;
+    margin-top: 2rem;
+}
+.service h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.service h3{
+    font-size: 28px;
+}
+
+
+
+/* ALL ABOUT HEALTH CONSULTATION  */
+
+main {
+    padding: 0;
+    margin-top: 3rem;
+    position: relative;
+}
+.information{
+    padding: 5rem 2rem;
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ALL ABOUT CONTACT FORM  */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+.contact-form form{
+    padding: 40px 30px;
+}
+.contact-form form button {
+    padding: 20px 9px;
+    border-radius: 50px;
+}
+
+
+ /* ALL ABOUT SUPPORT */
+ .container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 0rem;
+}
+.faq-section .support {
+    color: #1286C8;
+    padding: 1rem 0;
+}
+.faq-section h2{
+    margin-left: 8rem;
+}
+.faq-section h3 {
+   margin-left: 1rem;
+   font-size: 2rem;
+   width: 19rem;
+}
+.faq-section p {
+    margin-top: 1rem;
+    padding: 0 10px;
+    width: 26rem;
+}
+.faq-item {
+    width: 46%;
+}
+.schedule-appointment{
+    text-align: center;
+}
+.schedule-appointment img{
+    display: none;
+}
+.faq-answer img{
+    display: none;
+}
+.contact-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border: none;
+    margin: 1em 0 0 0;
+    width: 96%;
+    margin-right: 10rem;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid rgb(152, 148, 148);
+}
+
+
+
+/* all about container  */
+.container4 {
+    padding: 0 10px;
+    width: 195%;
+}
+.articles{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.articles h2{
+    margin: 0;
+    padding: 0;
+    
+}
+.article {
+    width: 46%;
+    margin: 20px 0;
+}
+.article img {
+    height: auto;
+}
+.flex-img{
+    display: flex;
+    justify-content: center;
+}
+    
+
+    /* all about footer   */
+.footer-left section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.footer-right {
+    min-width: 300px;
+    margin-right: 0rem;
+}
+.footer-links {
+    width: 450px;
+}
+.form-content form input{
+    width: 14rem;
+}
+.img-contain{
+    display: none;
+}
+
+
+}    
+
+
+

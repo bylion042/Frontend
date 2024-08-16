@@ -11,6 +11,9 @@ body {
 }
 
 /* ALL ABOUT HEADER  */
+.tuggle{
+    display: none;
+}
 
 header {
     padding:  5px 2rem;
@@ -18,12 +21,18 @@ header {
     align-items: center;
     border-bottom: 1px solid #ccc
 }
+
 .header-content {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
 }
+.search-and-buttons {
+    display: flex;
+    align-items: center;
+}
+
 .search-container {
     position: relative;
     display: inline-block;
@@ -34,6 +43,9 @@ header {
     left: 8rem;
     transform: translateY(-50%);
     color: #aaa;
+}
+.header-content section{
+    display: none;
 }
 .search-container input {
     padding-left: 50px;
@@ -51,7 +63,6 @@ header {
     display: flex;
     justify-content: space-around;
 }
-
 .search-and-buttons button {
     padding: 20px 20px;
     border: none;
@@ -62,11 +73,17 @@ header {
     border-radius: 30px;
     background: #FFFFFF;
 }
+
 .search-and-buttons button.highlight {
     background-color: #1286C8;
     color: #fff;
 }
+.search-and-buttons button.highlight:hover {
+    background: #005bb5;
+}
+
 /* Existing styles */
+
 nav ul {
     padding: 15px;
     margin: 0rem auto;
@@ -90,6 +107,9 @@ nav ul li a {
     color: #0a4a63;
     padding-bottom: 5px;
     position: relative;
+}
+.my-logo2{
+    display: none;
 }
 
 
@@ -168,7 +188,6 @@ main {
 }
 .text-content ul {
     margin-top: 1rem;
-    margin-left: 3rem;
 }
 .text-content ul li strong{
     font-size: larger;
@@ -191,6 +210,9 @@ main {
     font-size: 20px;
     font-weight: bolder;
     padding: 20px 15px;
+}
+.text-content .btn button:hover{
+    background: #b8e2fa;
 }
 .text-content .btn .btn-1 button {
     cursor: pointer;
@@ -293,6 +315,9 @@ ul {
     font-size: 19px;
     border-radius: 30px;
 }
+.get-answers:hover{
+    background-color: #0056b3;
+}
 
 .round-image {
     width: 500px;
@@ -337,6 +362,9 @@ ul {
     padding: 20px 20px;
     font-weight: bold;
     font-size: 19px;
+}
+.prescription-services .book-appointment:hover{
+    background-color: #0056b3;
 }
 .btn3{
     display: flex;
@@ -413,15 +441,16 @@ ul {
     margin: 4rem 0;
     overflow: hidden;
 }
-
-.articles h2 {
+.container h2 {
     color: #0D5F8E;
     font-size: xx-large ;
     margin: 0 2rem;
 }
+.container .articles{
+    display: flex;
+}
 .article {
-    display: inline-block;
-    width: 30%;
+    width: 34%;
     margin: 20px;
     padding: 20px;
     vertical-align: top;
@@ -614,3 +643,293 @@ ul {
 }
 
 
+
+
+
+
+
+
+/* MY MEDIA QUERY  */
+
+@media (max-width: 700px) {
+
+    /* all about heaf content  */
+.tuggle{
+    display: block;
+}
+header {
+    padding:  5px 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+}
+.header-content .my-logo{
+    margin-right: 10rem;
+    margin-bottom: 1rem;
+}
+.header-content section{
+    display: block;
+}
+.search-container img{
+    left: 2rem;
+}
+.search-container input {
+    padding: 15px 4rem;
+    border-radius: 25px;
+}
+.header-content{
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.search-and-buttons{
+    display: none;
+}
+    
+/* all about nav bar  */
+.tuggle{
+    font-size: xx-large;
+    color: #666869;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    position: relative;
+}
+nav ul {
+    padding: 2rem 1rem;
+    background: #e7f3fa;
+    gap: 2rem;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+}
+ul li{
+    padding: 5px 0;
+}
+.my-logo2{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+
+/* ALL ABOUT SERVICE WE PROVIDE  */
+.services {
+    margin-top: 3rem;
+    text-align: center;
+    background: url(../pro-health-PNG/Frame\ 213.png);
+    height: 52rem;
+    width: 100%;
+    position: inherit;
+}
+.services h2{
+    padding: 2rem 0;
+    margin-top: 1rem;
+    color: #0D5F8E;
+    font-size: 3rem;
+    width: 27rem;
+    text-align: center;
+}
+.services-container {
+    display: flex;
+    flex-direction: column;
+    width: 85rem;
+    padding: 0 20px;
+}
+.service-item{
+    text-align: center;
+}
+
+
+
+/* ALL ABOUT HEALTH CONSULTATION  */
+
+main {
+    margin-top: 0rem;
+    padding: 50px 0;
+}
+.health-consultation {
+    padding: 3rem 0rem;
+    width: 27rem;
+}
+.health-consultation-container {
+    display: flex;
+    flex-direction: column;
+}
+.text-content h1{
+    font-size: 40px;
+    padding: 0 20px;
+}
+.text-content p{
+    width: 25rem;
+    padding: 10px;
+    text-align: center;
+}
+.text-content .underline{
+    border-top: 1px solid #FFFFFF   ;
+    padding: 20px 2rem;
+}
+.text-content h3 {
+    padding: 0 0rem;
+    margin-top: 1rem;
+    font-size: x-large;
+}
+.text-content ul {
+    margin-top: 1rem;
+    padding: 10px;
+    width: 26rem;
+}
+.text-content ul li{
+    list-style: none;
+}
+.text-content .btn {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    display: flex;
+    width: 30rem;
+}
+
+.image-content img {
+    border-radius: 10px;
+    margin-right: 4rem;
+    width: 370px;
+    height: 500px;
+}
+
+
+/* ALL ABOUT WELLNESS PROGRAM  */
+.container{
+    width: 100%;
+}
+.container .head1{
+    border: none;
+    padding: 20px;
+}
+.container h1 {
+    color: #107AB6;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+.container p {
+    width: 24rem;
+}
+
+
+/* ALL ABOUT PHYICAL WELLNESS */
+.join-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+}
+.physical-wellness , .social-wellness{
+   width: 25rem;
+}
+.physical-wellness h2, .social-wellness h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+.round-image {
+    margin-top: 2rem;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.physical-wellness {
+    border-bottom: none;
+}
+
+
+/* alla bout prescription service  */
+.background-content{
+    width: 100%;
+}
+.join-section1 {
+    background-image: none; 
+}   
+.prescription-services{
+    padding: 2rem 40px;
+}
+.prescription-services p{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.btn3{
+    display: flex;
+    flex-direction: column;
+}
+.prescription-services .book-appointment:hover{
+    background-color: #0056b3;
+}
+.prescription-services button{
+    margin: 5px 0;
+}
+
+/* all about how it works  */
+#steps{
+    display: flex;
+    flex-direction: column;
+    width: 80rem;
+}
+.how-it-work h1 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+
+/* all about container  */
+.container {
+    width: 200%;
+}
+.articles{
+    display: flex;
+    flex-direction: column;
+}
+.article {
+    width: 48%;
+    margin: 20px 0;
+}
+.article img {
+    width: 100%;
+    height: auto;
+}
+.article h3 {
+    text-align: center;
+}
+.flex-img{
+    display: flex;
+    justify-content: center;
+}
+    
+
+
+    /* all about footer   */
+.footer-left section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.footer-right {
+    min-width: 300px;
+    margin-right: 0rem;
+}
+.footer-links {
+    width: 450px;
+}
+.form-content form input{
+    width: 14rem;
+}
+.img-contain{
+    display: none;
+}
+
+
+}    

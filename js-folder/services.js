@@ -12,3 +12,20 @@ navLinks.forEach(link => {
         this.parentElement.classList.add('active');
     });
 });
+
+
+document.querySelector('.tuggle').addEventListener('click', function() {
+    const nav = document.querySelector('nav');
+    const icon = this.querySelector('i');
+
+    // Toggle the display of the nav
+    if (nav.style.display === "none" || nav.style.display === "") {
+        nav.style.display = "block"; // Show nav
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark'); // Change icon to "x"
+    } else {
+        nav.style.display = "none"; // Hide nav
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars'); // Change icon back to "bars"
+    }
+});

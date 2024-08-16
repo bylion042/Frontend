@@ -7,15 +7,22 @@
     <link rel="stylesheet" href="./css-folder/home.css">
 </head>
 <body>
+
+
+       <!-- this is for nav tuggle  -->
+    <section class="tuggle">
+        <i class="fa-solid fa-bars"></i>
+    </section>
+
+
+    <!-- all about header  -->
     <header>
         <div class="header-content">
-            <img src="./pro-health-PNG/LOGO.png" alt="logo">
-            
+            <img src="./pro-health-PNG/LOGO.png" alt="logo" class="my-logo">
             <div class="search-container">
                 <img src="./pro-health-PNG/gala_search.png">
                 <input type="text" placeholder="Search related content">
-            </div>
-            
+            </div> <br>          
             <div class="search-and-buttons">
                 <button>Get answers</button>
                 <img src="./pro-health-PNG/Line 9.png" width="2rem" height="60rem">
@@ -25,27 +32,32 @@
     </header>
 
 
-    <section>
+
+    <!-- all about nav  -->
         <nav>
-            <ul>
-                <li><a href="#">Our Services</a> <i class="fa-solid fa-angle-down"></i></li>
+            <ul> 
+            <img src="./pro-health-PNG/LOGO.png" alt="logo" class="my-logo2">
+
+                <li><a href="./services.html">Our Services</a> <i class="fa-solid fa-angle-down"></i></li>
                 <li><a href="#">Our Physicians</a> <i class="fa-solid fa-angle-down"></i></li>
                 <li><a href="#">Health Information for Patients</a> <i class="fa-solid fa-angle-down"></i></li>
                 <li><a href="#">About Us</a> <i class="fa-solid fa-angle-down"></i></li>
                 <li><a href="#">FAQs</a> <i class="fa-solid fa-angle-down"></i></li>
-                <li><a href="#">Need Help?</a> <i class="fa-solid fa-angle-down"></i></li>
+                <li><a href="./contact.html">Need Help?</a> <i class="fa-solid fa-angle-down"></i></li> 
             </ul>
         </nav>
-    </section>
 
 
 
+    
+  <!-- all about hero  -->
     <section class="hero">
         <div class="hero-content">
-
             <div class="h2">
             <h2>Bringing Healthcare  <br>  Home to you</h2>
             </div>
+        <img src="./pro-health-PNG/Frame 278.png" class="hero-frame" width="100%"> <br> <br>
+
         <div class="join">
             <p>Our team of certified doctors and specialists is just a click away, <br>
              ready to provide personalized medical advice and treatment plans. <br>
@@ -55,25 +67,28 @@
                 <button>Get Instant Help</button>
             </div>
         </div>
-            
         </div>
         <img src="../pro-health-PNG/Frame 155.png" alt="Family" class="hero-image">
     </section>
 
 
 <section id="join-section">
-
     <section class="services">
-        <h2>Services we Provide</h2>
+        <div class="swp">
+            <h2>Services we Provide</h2>
+        </div>
         <div class="services-content">
-            <img src="../pro-health-PNG/Hero Container Service Page.png" alt="Doctors">
+            <img src="../pro-health-PNG/Hero Container Service Page.png" class="Doctors">
+            <img src="./pro-health-PNG/Hero Container Service Page444.png" class="doctor">
             <div class="services-text">
                 <p>Healthcare should be available when you need it most. Thats why our telemedicine services
                  are accessible 24/7. Whether you have a medical concern in the middle of the night or require
                  a consultation during a busy workday, our platform ensures that you can connect with a
                  healthcare provider at any time. Your health and convenience are our top priorities.</p> <br> <br>
-                <button>Get answers</button>
-                <button class="highlight">Start Consultation</button>
+                <div class="btn-content">
+                    <button>Get answers</button>
+                    <button class="highlight">Start Consultation</button>
+                </div>
             </div>
         </div>
     </section>
@@ -118,17 +133,24 @@
         <div class="step">
             <h2>Step 1:</h2> <br>
             <h3>Sign Up or Log In</h3>
-            <p>If you're a new user, start by signing up for an account on our platform. Provide your basic information and create a secure password. If you're already registered, simply log in with your credentials to access your dashboard.</p>
+            <p>If you're a new user, start by signing up for an account on our platform. Provide your
+             basic information and create a secure  valid password. If you're already registered, simply log 
+             in with your credentials to access your dashboard .</p> <br> <br> <br> 
         </div>
         <div class="step">
             <h2>Step 2:</h2> <br>
             <h3>Choose Your Doctor and Appointment Time</h3>
-            <p>Click on the “Start Consultation Button” and select the type of consultation you need. Whether you require a general check-up, specialist consultation, or mental health support, our platform offers a variety of services to meet your healthcare needs.</p>
+            <p>Click on the “Start Consultation Button” and select the type of consultation you need.
+             Whether you require a general check-up, specialist consultation, or mental health 
+             support, our platform offers a variety of services to meet your healthcare needs.</p><br> <br> <br>
         </div>
         <div class="step">
             <h2>Step 3:</h2> <br>
             <h3>Choose Your Doctor and Appointment Time</h3>
-            <p>Select a convenient date and time for your consultation from the available slots. Confirm your appointment and receive a notification with the details. At the scheduled time, log in to your account to connect with your healthcare provider for your virtual visit.</p>
+            <p>Select a convenient date and time for your consultation from the available slots. 
+            Confirm your appointment and receive a notification with the details. At the scheduled 
+            time, log in to your account to connect with your healthcare provider for your virtual 
+            visit.</p>
         </div>
     </section>
 </section>
@@ -137,10 +159,14 @@
 
 
     <section id="mental-health">
+        <div class="img-content">
+            <img src="./pro-health-PNG/minimalistic-science-banner-with-stethoscope 222.png" width="105%">
+        </div>
       <div class="health-contain">
-        <h2>Your Mental Health is <br> our Top Priority</h2> <br>
+        <h2>Your Mental Health is <br> our Top Priority</h2> <br> 
         <p>Your mental well-being is just as important as your physical health. <br>
-         Connect with licensed therapists and counselors for confidential and compassionate care.</p> <br>  
+         Connect with licensed therapists and counselors for confidential and 
+         compassionate care.</p> 
         <button>
             Get Instant Help
             <img src="./pro-health-PNG/Group.png" alt="Help Icon" width="25">
@@ -167,6 +193,7 @@
 
    
     <div class="join-section2">
+        <img class="join-section5-img" src="../pro-health-PNG/Frame 178.png">
         <section>
            <img class="join-section2-img" src="../pro-health-PNG/Frame 178.png" alt="Doctors" width= "115%">
         </section>
@@ -178,7 +205,7 @@
             to transforming the way healthcare is delivered. Our platform connects patients with certified
             doctors, specialists, and mental health professionals through secure and user-friendly virtual 
             consultations. With a focus on patient-centric care, we strive to offer a seamless and efficient 
-            healthcare experience.</p><br> <br>
+            healthcare experience.</p>
             <div class="btn4">
            <button class="light">Get Answers</button>
            <button class="highlight">Start Consultation</button> 
@@ -291,49 +318,44 @@
 
 
 
-
-
-    <!-- ALL ABOUT HEALTH ARTICLE -->
+   <!--  ALL ABOUT Wellness Article for You -->
 
     <div class="container4">
+        <h2>Health Article</h2>
         <section class="articles">
-            <h2>Health Article</h2>
-            <div class="article">
-                 <img src="./pro-health-PNG/Frame 205 (2).png" alt="Mental Health and Wellness">
-                 <h3>Mental Health and Wellness: Strategies for a Balanced Life</h3>
-                 <p>Mental health is as important as physical health for overall well-being. Managing stress, practicing mindfulness, and seeking professional help when needed are key strategies for maintaining mental wellness...</p> <br> <br>
-                 <div class="flex-img">
+            <div class="content1 article">
+                <img src="./pro-health-PNG/Frame 205 (2).png" alt="Mental Health and Wellness">
+                <h3>Mental Health and Wellness: Strategies for a Balanced Life</h3>
+                <p>Mental health is as important as physical health for overall well-being. Managing stress, practicing mindfulness, and seeking professional help when needed are key strategies for maintaining mental wellness...</p>
+                <div class="flex-img">
+                    <a href="#">Read more <img src="./pro-health-PNG/Group.png" width="30" height="50"></a>
+                </div>
+            </div>    
+            <div class="content2 article">
+                <img src="./pro-health-PNG/Frame 205.png" alt="Nutrition">
+                <h3>Nutrition: The Key to Optimal <br> Health</h3>
+                <p>Mental health is as important as physical health for overall well-being. Managing stress, practicing mindfulness, and seeking professional help when needed are key strategies for maintaining mental wellness...</p>
+                <div class="flex-img">
                     <a href="#">Read more <img src="./pro-health-PNG/Group.png" width="30" height="50"></a>
                 </div>
             </div>
-                <div class="article">
-                    <img src="./pro-health-PNG/Frame 205.png" alt="Nutrition">
-                    <h3>Nutrition: The Key to Optimal <br> Health</h3> <br>
-                    <p>Mental health is as important as physical health for overall well-being.
-                     Managing stress, practicing mindfulness, and seeking professional help when
-                     needed are key strategies for maintaining mental wellness...</p> <br> 
-                     <div class="flex-img">
-                        <a href="#">Read more <img src="./pro-health-PNG/Group.png" width="30" height="50"></a>
-                    </div>
+            <div class="content3 article">
+                <img src="./pro-health-PNG/Frame 205 (1).png" alt="Mental Health and Wellness">
+                <h3>Mental Health and Wellness: Strategies for a Balanced Life</h3>
+                <p>Mental health is as important as physical health for overall well-being. Managing stress, practicing mindfulness, and seeking professional help when needed are key strategies for maintaining mental wellness...</p>
+                <div class="flex-img">
+                    <a href="#">Read more <img src="./pro-health-PNG/Group.png" width="30" height="50"></a>
                 </div>
-                <div class="article">
-                    <img src="./pro-health-PNG/Frame 205 (1).png" alt="Mental Health and Wellness">
-                    <h3>Mental Health and Wellness: Strategies for a Balanced Life</h3> <br>
-                    <p>Mental health is as important as physical health for overall well-being.
-                     Managing stress, practicing mindfulness, and seeking professional help when
-                     needed are key strategies for maintaining mental wellness...</p> <br> 
-                     <div class="flex-img">
-                        <a href="#">Read more <img src="./pro-health-PNG/Group.png" width="30" height="50"></a>
-                    </div>
-                </div>
-          </section>
-        </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="my-arrows">
+        <img src="./pro-health-PNG/arrow-right-circle.png" width="60px" height="60px" class="left-arrow" onclick="swapLeft()">
+        <img src="./pro-health-PNG/Subtract.png" width="50px" height="50px" class="right-arrow" onclick="swapRight()">
+    </div>
 
 
-        <div class="my-arrows">
-            <img src="./pro-health-PNG/arrow-right-circle.png" width="60px" height="60px">
-            <img src="./pro-health-PNG/Subtract.png" width="50px" height="50px">
-        </div>
 
 
 
