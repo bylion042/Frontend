@@ -104,7 +104,7 @@ nav ul li.active {
 }
 nav ul li a {
     text-decoration: none;
-    color: #0a4a63;
+    color: #000;
     padding-bottom: 5px;
     position: relative;
 }
@@ -574,7 +574,7 @@ form button:hover {
 
 
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
     /* all about heaf content  */
 .tuggle{
@@ -588,28 +588,32 @@ header {
 }
 .header-content .my-logo{
     margin-right: 10rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .header-content section{
     display: block;
 }
 .search-container img{
-    left: 2rem;
+    left: 8px;
 }
 .search-container input {
-    padding: 15px 4rem;
+    padding: 15px 35px;
     border-radius: 25px;
 }
 .header-content{
     display: flex;
-     flex-direction: column;
-     justify-content: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .search-and-buttons{
     display: none;
 }
-    
-/* all about nav bar  */
+
+
+/* all abpout nav bar  */
+nav {
+    display: none;
+}
 .tuggle{
     font-size: xx-large;
     color: #666869;
@@ -618,27 +622,31 @@ header {
     margin-right: 2rem;
     margin-top: 2rem;
     position: relative;
-    
-
 }
 nav ul {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     background: #e7f3fa;
-    gap: 2rem;
-    width: 100%;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+    gap: 15px;
+    width: 80%;
+    text-align: center;
     flex-direction: column;
     position: absolute;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
     top: 65px;
+    left: 3rem;
 }
 ul li{
-    padding: 5px 0;
+    padding: 0px 0;
 }
+ul li a{
+    font-weight: 500;
+}
+
 .my-logo2{
     display: block;
-    margin-bottom: 1rem;
+    width: 8rem;
+    margin-left: 4rem;
 }
 
 
@@ -652,16 +660,18 @@ ul li{
     position:static;
 }
 .service{
-
     align-items: center;
-    margin-top: 2rem;
+    padding: 2rem 0;
 }
 .service h2{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
+    margin-top: 0rem;
 }
 .service h3{
-    font-size: 28px;
+    font-size: 20px;
+    margin-top: 0;
+    padding: 0;
 }
 
 
@@ -670,30 +680,42 @@ ul li{
 
 main {
     padding: 0;
-    margin-top: 3rem;
+    margin-top: 2rem;
     position: relative;
 }
 .information{
-    padding: 5rem 2rem;
-    gap: 5rem;
+    padding: 5rem 1rem;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
+}
+.contact-details p, .quality{
+    font-size: large;
+}
+.contact-details .quality img{
+    width: 30px;
 }
 
 
 /* ALL ABOUT CONTACT FORM  */
+.contact-form{
+    width: 100%;
+}
 .contact-form form {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     background-color: #FFFFFF;
+    padding: 30px 15px;
 }
-.contact-form form{
-    padding: 40px 30px;
+.contact-form form input{
+    font-size: 17px;
 }
 .contact-form form button {
-    padding: 20px 9px;
+    padding: 15px 5px;
     border-radius: 50px;
+    width: 55%;
+    margin-left: 4rem;
 }
 
 
@@ -711,22 +733,33 @@ main {
 }
 .faq-section h2{
     margin-left: 8rem;
+    font-size: 25px;
 }
 .faq-section h3 {
    margin-left: 1rem;
-   font-size: 2rem;
+   font-size: 30px;
    width: 19rem;
 }
 .faq-section p {
     margin-top: 1rem;
     padding: 0 10px;
-    width: 26rem;
+    width: 24rem;
+    font-size: large;
 }
 .faq-item {
-    width: 46%;
+    width: 40%;
+}
+.faq-question strong{
+    font-size: larger;
+}
+.faq-question span{
+    font-size: large;
 }
 .schedule-appointment{
     text-align: center;
+}
+.schedule-appointment span{
+    font-size: 25px;
 }
 .schedule-appointment img{
     display: none;
@@ -734,37 +767,55 @@ main {
 .faq-answer img{
     display: none;
 }
+.faq-answer p{
+    font-size: large;
+}
 .contact-section {
-    background-color: #ffffff;
-    padding: 20px;
+    padding: 0 15px;
     border: none;
     margin: 1em 0 0 0;
-    width: 96%;
+    width: 100%;
     margin-right: 10rem;
-    margin-bottom: 3rem;
-    border-bottom: 2px solid rgb(152, 148, 148);
+    margin-bottom: 1rem;
+    border-bottom: none;
+}
+.contact-section h3{
+    font-size: 25px;
+}
+.contact-section p{
+    font-size: large;
+}
+.contact-section form textarea{
+    font-size: large;
+}
+.contact-section form button{
+    padding: 15px 0px;
+    width: 50%;
+    margin-left: 5rem;
 }
 
 
 
 /* all about container  */
 .container4 {
-    padding: 0 10px;
-    width: 195%;
+    padding: 0 15px;
 }
 .articles{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 215%;
 }
 .articles h2{
     margin: 0;
     padding: 0;
-    
+    font-size: 27px;
 }
 .article {
     width: 46%;
     margin: 20px 0;
+}
+.article p{
+    font-size: large;
 }
 .article img {
     height: auto;
@@ -780,17 +831,26 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0;
+    margin: 1rem 0;
+}
+.footer-left p{
+    font-size: large;
 }
 .footer-right {
-    min-width: 300px;
+    width: 100%;
     margin-right: 0rem;
 }
 .footer-links {
-    width: 450px;
+    width: 100%;
+}
+.newsletter p{
+    font-size: large;
+}
+.form-content{
+    width: 100%;
 }
 .form-content form input{
-    width: 14rem;
+    width: 10rem;
 }
 .img-contain{
     display: none;

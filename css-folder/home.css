@@ -107,7 +107,7 @@ nav ul li.active {
 }
 nav ul li a {
     text-decoration: none;
-    color: #0a4a63;
+    color: #000;
     padding-bottom: 5px;
     position: relative;
 }
@@ -843,16 +843,16 @@ header {
 }
 .header-content .my-logo{
     margin-right: 10rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .header-content section{
     display: block;
 }
 .search-container img{
-    left: 2rem;
+    left: 8px;
 }
 .search-container input {
-    padding: 15px 4rem;
+    padding: 15px 35px;
     border-radius: 25px;
 }
 .header-content{
@@ -879,23 +879,29 @@ nav {
     position: relative;
 }
 nav ul {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     background: #e7f3fa;
-    gap: 2rem;
-    width: 100%;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+    gap: 15px;
+    width: 80%;
+    text-align: center;
     flex-direction: column;
     position: absolute;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
     top: 65px;
+    left: 3rem;
 }
 ul li{
-    padding: 5px 0;
+    padding: 0px 0;
 }
+ul li a{
+    font-weight: 500;
+}
+
 .my-logo2{
     display: block;
-    margin-bottom: 1rem;
+    width: 8rem;
+    margin-left: 4rem;
 }
 
 
@@ -925,6 +931,9 @@ ul li{
     display: block;
     width: 100%;
 }
+.join p{
+    font-size: large;
+}
 .hero-buttons{
     display: flex;
     margin-left: 15px;
@@ -949,12 +958,15 @@ ul li{
 
     /* about services we provide  */
 .services {
-    padding: 20px 20px;
+    padding: 10px 15px;
 }
 .services .swp{
     display: flex;
     justify-content: center;
     margin: 1rem 0;
+}
+.services .swp h2{
+    font-size: 26px;
 }
 .services-content {
     flex-direction: column;
@@ -979,6 +991,7 @@ ul li{
 }
 .services-text p{
     text-align: center;
+    font-size: large;
 }
 .btn-content {
     display: flex;
@@ -986,9 +999,9 @@ ul li{
     justify-content: center;
 }
 .services button {
-    padding: 20px 15px;
+    padding: 20px 10px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 17px;
 }
 .services h2 {
     font-size: xx-large;
@@ -1018,14 +1031,25 @@ ul li{
     position: relative;
 }
 .card button {
-    padding: 20px 20px;
+    padding: 15px 15px;
+    font-weight: 500;
 }
+.card p{
+    font-size: large;
+}
+
+
+
+
 
 /* all about how it works  */
 .how-it-works .how-it-work{
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
+}
+.how-it-works .how-it-work h1{
+   font-size: 28px;
 }
 .how-it-works #steps{
     display: flex;
@@ -1034,11 +1058,19 @@ ul li{
 }
 .step {
     border-radius: 10px;
-    padding: 5px;
+    padding: 0 5px;
     width: 97%;
 }
 .step h2{
-    font-size:2rem;
+    font-size: 30px;
+}
+.step h3{
+    font-size: 20px;
+    margin: 0;
+    padding: 1rem 0;
+}
+.step p{
+    font-size: large;
 }
 
 
@@ -1049,16 +1081,19 @@ ul li{
 }
 #mental-health .img-content{
     display: block;
-    height: 5rem;
+    height: 7rem;
 }
 #mental-health h2{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     color: #0D5F8E;
     width: 100%;
 }
+#mental-health p{
+    font-size: large;
+}
 .health-contain button {
-    padding: 20px 15px;
+    padding: 15px 10px;
 }
 
 
@@ -1070,17 +1105,21 @@ ul li{
 #about-us h2{
     display: flex;
     justify-content: center;
+    font-size: 27px;
 }
 #about-us h3{
     display: flex;
     justify-content: center;
+    font-size: 27px;
 }
 #about-us p{
     text-align: center;
-   display: block;
+    /* display: block; */
+    font-size: large;
 }
 #about-us strong {
     color: #1e93d7;
+    font-size: large;
 }
 #about-us img{
     width: 100%;
@@ -1114,19 +1153,24 @@ ul li{
 #who-we-are h2{
     display: flex;
     justify-content: center;
-} #who-we-are p{
+    font-size: 27px;
+} 
+#who-we-are p{
     text-align: center;
     display: flex;
     margin: 0;
+    font-size: large;
 } 
  #who-we-are .btn4 {
     display: flex;
     flex-direction: column;
     background: none;
-    width: 370px;
+    width: 200px;
+    justify-content: center;
+    margin-left: 4rem;
 } 
 .btn4 button {
-   padding: 23px 30px;
+   padding: 15px 10px;
    font-size: larger;
    font-weight: bold;
    border-radius: 40px;
@@ -1151,19 +1195,20 @@ ul li{
     margin: 0;
     padding: 0;
     margin-top: 2rem;
+    font-size: 24px;
 }
 
 #offer p{
     margin: 15px 0;
-    font-size: 20px;
-    gap: 15px;
+    font-size: 16px;
+    gap: 30px;
 }
 #offer p img{
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
 }
 #offer  strong{
-    padding: 25px 0 0;
+    padding: 15px 0 0;
 } 
 
 
@@ -1182,29 +1227,40 @@ ul li{
 }
 .patient h2{
     text-align: center;
+    font-size: 27px;
 }
 .content-hold p{
     text-align: center;
+    font-size: large;
 }
  .badge-content{
     margin-left: 0rem;
     margin-bottom: 4rem;
 } 
+.badge-content h5{
+    font-size: 17px;
+}
 
 
 
 
 .carousel {
     display: flex;
-    overflow: hidden;
 }
 
 .carousel-item {
-    flex: 1 0 100%;
     opacity: 0;
     transform: scale(0.8);
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
-
+.flex-all{
+    padding: 11px 20px;
+}
+.flex-all h4{
+    margin-bottom: 0px;
+}
 .carousel-item.active {
     opacity: 1;
     transform: scale(1);
@@ -1215,21 +1271,38 @@ ul li{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     height: 27rem;
 }
-
+.review-card .profile{
+   padding: 0;
+}
+.review-card p{
+    font-size: large;
+    text-align: center;
+    margin-top: 2rem;
+}
+.carousel-controls {
+    gap: 1rem;
+}
+.carousel-dots {
+    gap: 5px;
+}
 
 
 
 /* ALL ABOUT Wellness Article for You */
+.container4 h2{
+    font-size: 28px;
+}
 .articles {
     display: block;
 }
-    
 .article {
     width: 100%;
     margin: 0;
     padding: 15px 0;
 }
-    
+.article p{
+    font-size: large;
+}
 .content2, .content3 {
     display: none;
 }
@@ -1242,17 +1315,26 @@ ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0;
+    margin: 1rem 0;
+}
+.footer-left p{
+    font-size: large;
 }
 .footer-right {
-    min-width: 300px;
+    width: 100%;
     margin-right: 0rem;
 }
 .footer-links {
-    width: 450px;
+    width: 100%;
+}
+.form-content{
+    width: 100%;
+}
+.newsletter p{
+    font-size: large;
 }
 .form-content form input{
-    width: 14rem;
+    width: 10rem;
 }
 .img-contain{
     display: none;

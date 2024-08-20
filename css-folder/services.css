@@ -104,7 +104,7 @@ nav ul li.active {
 }
 nav ul li a {
     text-decoration: none;
-    color: #0a4a63;
+    color: #000;
     padding-bottom: 5px;
     position: relative;
 }
@@ -665,28 +665,32 @@ header {
 }
 .header-content .my-logo{
     margin-right: 10rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .header-content section{
     display: block;
 }
 .search-container img{
-    left: 2rem;
+    left: 8px;
 }
 .search-container input {
-    padding: 15px 4rem;
+    padding: 15px 35px;
     border-radius: 25px;
 }
 .header-content{
     display: flex;
-     flex-direction: column;
-     justify-content: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .search-and-buttons{
     display: none;
 }
     
-/* all about nav bar  */
+    
+    /* all abpout nav bar  */
+nav {
+    display: none;
+}
 .tuggle{
     font-size: xx-large;
     color: #666869;
@@ -697,24 +701,31 @@ header {
     position: relative;
 }
 nav ul {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     background: #e7f3fa;
-    gap: 2rem;
-    width: 100%;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+    gap: 15px;
+    width: 80%;
+    text-align: center;
     flex-direction: column;
     position: absolute;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
     top: 65px;
+    left: 3rem;
 }
 ul li{
-    padding: 5px 0;
+    padding: 0px 0;
 }
+ul li a{
+    font-weight: 500;
+}
+    
 .my-logo2{
     display: block;
-    margin-bottom: 1rem;
+    width: 8rem;
+    margin-left: 4rem;
 }
+    
 
 
 
@@ -732,17 +743,24 @@ ul li{
     margin-top: 1rem;
     color: #0D5F8E;
     font-size: 3rem;
-    width: 27rem;
-    text-align: center;
+    font-weight: 500;
+    width: 1rem;
 }
 .services-container {
     display: flex;
     flex-direction: column;
-    width: 85rem;
-    padding: 0 20px;
+    width: 73rem;
+    margin: 0;
+    padding: 0;
 }
-.service-item{
-    text-align: center;
+.service-item h3{
+    font-size: 27px;
+    font-weight: 500;
+}
+.service-item p{
+    font-size: large;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -752,10 +770,11 @@ ul li{
 main {
     margin-top: 0rem;
     padding: 50px 0;
+    width: 100%;
 }
 .health-consultation {
     padding: 3rem 0rem;
-    width: 27rem;
+    width: 100%;
 }
 .health-consultation-container {
     display: flex;
@@ -763,41 +782,54 @@ main {
 }
 .text-content h1{
     font-size: 40px;
-    padding: 0 20px;
+    font-weight: 400;
+    padding: 0 0px;
 }
 .text-content p{
-    width: 25rem;
+    width: 24rem;
     padding: 10px;
-    text-align: center;
+    font-size: large;
 }
 .text-content .underline{
     border-top: 1px solid #FFFFFF   ;
     padding: 20px 2rem;
 }
 .text-content h3 {
-    padding: 0 0rem;
+    padding: 0 1rem;
     margin-top: 1rem;
-    font-size: x-large;
+    font-size: 25px;
+    font-weight: 500;
 }
 .text-content ul {
     margin-top: 1rem;
     padding: 10px;
-    width: 26rem;
 }
 .text-content ul li{
+    width: 21rem;
     list-style: none;
+    font-size: 15px;
 }
 .text-content .btn {
     margin-top: 1rem;
     margin-left: 0rem;
     display: flex;
-    width: 30rem;
+    width: 27rem;
+    padding: 0 10px;
+}
+.text-content .btn button{
+    padding: 10px 5px;
+    font-size: large;
+    font-weight: 500;
+}
+.text-content .btn .btn-1 button{
+    padding: 15px 5px;
+    font-size: large;
+    font-weight: 400;
 }
 
 .image-content img {
-    border-radius: 10px;
-    margin-right: 4rem;
-    width: 370px;
+    margin-right: 5rem;
+    width: 82%;
     height: 500px;
 }
 
@@ -825,19 +857,61 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 15px;
+}
+.head1 h1{
+    font-weight: 400;
+}
+.head1 p{
+    font-size: large;
+    width: 100%;
+}
+.physical-wellness p, .social-wellness p{
+    font-size: large;
+    width: 83%;
 }
 .physical-wellness , .social-wellness{
    width: 25rem;
 }
 .physical-wellness h2, .social-wellness h2 {
-    text-align: center;
     margin-top: 2rem;
+}
+ul {
+    padding: 15px 15px;
+}
+
+.physical-wellness ul li strong, .social-wellness ul li strong{
+    font-size: 17px;
+}
+.physical-wellness ul li, .social-wellness ul li {
+    font-size: 15px;
+    width: 80%;
+}
+.social-wellness-btn{
+    padding: 4px;
+    width: 310px;
+    gap: 5px;
+    background: none;
+}
+.social-wellness-btn img{
+    display: none;
+}
+
+.start-consultation {
+    padding: 15px 10px;
+    font-weight: 500;
+    font-size: 19px;
+    background: #f4f2f2;
+} 
+.get-answers {
+    padding: 15px 10px; 
+    font-weight: 600;
+    font-size: 18px;
 }
 .round-image {
     margin-top: 2rem;
-    width: 370px;
-    height: 370px;
+    width: 330px;
+    height: 330px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -846,7 +920,7 @@ main {
 }
 
 
-/* alla bout prescription service  */
+/* all about prescription service  */
 .background-content{
     width: 100%;
 }
@@ -854,22 +928,39 @@ main {
     background-image: none; 
 }   
 .prescription-services{
-    padding: 2rem 40px;
+    padding: 2rem 20px;
+}
+.prescription-services h2{
+    margin: 10px;
+    padding: 0;
+    font-size: 27px;
+    margin-top: 2rem;
 }
 .prescription-services p{
-    text-align: center;
+    font-size: large;
     margin-bottom: 1rem;
 }
 .btn3{
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
-}
-.prescription-services .book-appointment:hover{
-    background-color: #0056b3;
+    width: 70%;
 }
 .prescription-services button{
-    margin: 5px 0;
+    margin: 0;
+    color: #1286C8;
+    background: none;
 }
+.prescription-services .book-appointment{
+    padding: 15px 0;
+    font-weight: 500;
+} 
+
+.prescription-services .get-instant-help {
+    font-weight: 500;
+}
+
+
 
 /* all about how it works  */
 #steps{
@@ -879,57 +970,86 @@ main {
 }
 .how-it-work h1 {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 0rem;
+    font-size: 27px;
+}
+.step h2{
+    font-size: 35px;
+}
+.step h3{
+    margin: 0;
+}
+.step p{
+    font-size: large;
+    width: 90%;
 }
 
 
-
-/* all about container  */
+/* ALL ABOUT featured Article for You */
 .container {
-    width: 200%;
+    padding: 0;
+    width: 100%;
+}
+.container h2{
+    font-size: 27px;
 }
 .articles{
+    margin-right: 2rem;
     display: flex;
     flex-direction: column;
+    width: 205%;
+}
+.articles h3{
+    font-size: larger;
+    margin-bottom: 15px;
 }
 .article {
-    width: 48%;
-    margin: 20px 0;
+    width: 49%;
+    margin: 0px 0;
+}
+.article p{
+    font-size: large;
+    width: 100%;
 }
 .article img {
-    width: 100%;
     height: auto;
-}
-.article h3 {
-    text-align: center;
 }
 .flex-img{
     display: flex;
     justify-content: center;
 }
-    
 
 
-    /* all about footer   */
+
+
+/* all about footer   */
 .footer-left section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0;
+    margin: 1rem 0;
+}
+.footer-left p{
+    font-size: large;
 }
 .footer-right {
-    min-width: 300px;
+    width: 100%;
     margin-right: 0rem;
 }
 .footer-links {
-    width: 450px;
+    width: 100%;
+}
+.form-content{
+    width: 100%;
+}
+.newsletter p{
+    font-size: large;
 }
 .form-content form input{
-    width: 14rem;
+    width: 10rem;
 }
 .img-contain{
     display: none;
 }
-
 
 }    
