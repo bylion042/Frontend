@@ -726,6 +726,10 @@ main {
     justify-content: space-between;
     padding: 0px;
     gap: 0rem;
+    width: 100%;
+}
+.faq-section{
+    width: 100%;
 }
 .faq-section .support {
     color: #1286C8;
@@ -738,16 +742,16 @@ main {
 .faq-section h3 {
    margin-left: 1rem;
    font-size: 30px;
-   width: 19rem;
+   width: 100%;
 }
 .faq-section p {
     margin-top: 1rem;
     padding: 0 10px;
-    width: 24rem;
+    width: 100%;
     font-size: large;
 }
 .faq-item {
-    width: 40%;
+    width: 100%;
 }
 .faq-question strong{
     font-size: larger;
@@ -798,12 +802,13 @@ main {
 
 /* all about container  */
 .container4 {
-    padding: 0 15px;
+    width: 100%;
+    padding: 0 15px
 }
 .articles{
     display: flex;
     flex-direction: column;
-    width: 215%;
+    width: 100%;
 }
 .articles h2{
     margin: 0;
@@ -811,7 +816,7 @@ main {
     font-size: 27px;
 }
 .article {
-    width: 46%;
+    width: 100%;
     margin: 20px 0;
 }
 .article p{

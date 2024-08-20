@@ -610,7 +610,7 @@ button img {
 .container4 {
     width: 100%;
     margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 20px;
 }
 .container4 h2 {
@@ -1243,11 +1243,19 @@ ul li a{
 
 
 
-
+.carousel-container{
+    width: 100;
+}
 .carousel {
     display: flex;
+    width: 100%;
 }
-
+.carousel .carousel-item .active{
+    display: block;
+}
+#item-0, #item-2{
+    display: none;
+}
 .carousel-item {
     opacity: 0;
     transform: scale(0.8);
@@ -1256,14 +1264,26 @@ ul li a{
     width: 100%;
 }
 .flex-all{
-    padding: 11px 20px;
+    padding: 10px 15px;
+    width: 65%;
 }
 .flex-all h4{
     margin-bottom: 0px;
 }
+.stars{
+    width: 0%;
+}
 .carousel-item.active {
     opacity: 1;
     transform: scale(1);
+}
+.profile{
+    width: 100%;
+    gap: 0;
+}
+.profile .patient-1{
+    width: 100px;
+    height: 100px;
 }
 .review-card {
     padding: 20px;
@@ -1276,8 +1296,8 @@ ul li a{
 }
 .review-card p{
     font-size: large;
-    text-align: center;
     margin-top: 2rem;
+    padding: 0;
 }
 .carousel-controls {
     gap: 1rem;
@@ -1285,6 +1305,7 @@ ul li a{
 .carousel-dots {
     gap: 5px;
 }
+
 
 
 
@@ -1306,7 +1327,6 @@ ul li a{
 .content2, .content3 {
     display: none;
 }
-
 
 
 

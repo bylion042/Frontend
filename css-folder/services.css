@@ -744,14 +744,17 @@ ul li a{
     color: #0D5F8E;
     font-size: 3rem;
     font-weight: 500;
-    width: 1rem;
+    width: 100%;
 }
 .services-container {
     display: flex;
     flex-direction: column;
-    width: 73rem;
+    width: 100%;
     margin: 0;
     padding: 0;
+}
+.service-item{
+    width: 100%;
 }
 .service-item h3{
     font-size: 27px;
@@ -786,7 +789,7 @@ main {
     padding: 0 0px;
 }
 .text-content p{
-    width: 24rem;
+    width: 100%;
     padding: 10px;
     font-size: large;
 }
@@ -805,7 +808,7 @@ main {
     padding: 10px;
 }
 .text-content ul li{
-    width: 21rem;
+    width: 100%;
     list-style: none;
     font-size: 15px;
 }
@@ -813,7 +816,7 @@ main {
     margin-top: 1rem;
     margin-left: 0rem;
     display: flex;
-    width: 27rem;
+    width: 100%;
     padding: 0 10px;
 }
 .text-content .btn button{
@@ -829,7 +832,7 @@ main {
 
 .image-content img {
     margin-right: 5rem;
-    width: 82%;
+    width: 100%;
     height: 500px;
 }
 
@@ -963,15 +966,21 @@ ul {
 
 
 /* all about how it works  */
+.how-it-works{
+    width: 100%;
+}
 #steps{
     display: flex;
     flex-direction: column;
-    width: 80rem;
+    width: 100%;
 }
 .how-it-work h1 {
     text-align: center;
     margin-top: 0rem;
     font-size: 27px;
+}
+.step{
+    width: 100%;
 }
 .step h2{
     font-size: 35px;
@@ -981,7 +990,7 @@ ul {
 }
 .step p{
     font-size: large;
-    width: 90%;
+    width: 100%;
 }
 
 
