@@ -849,11 +849,13 @@ header {
     display: block;
 }
 .search-container img{
-    left: 8px;
+    left: 10px;
+    width: 20px;
 }
 .search-container input {
     padding: 15px 35px;
     border-radius: 25px;
+    font-size: 17px;
 }
 .header-content{
     display: flex;
@@ -916,7 +918,7 @@ ul li a{
 .hero-content .h2{
     text-align: center;
     align-items: center;
-    font-size: larger;
+    font-size: large;
 }
 .hero-content .join{
     margin-left: 0;
@@ -932,7 +934,7 @@ ul li a{
     width: 100%;
 }
 .join p{
-    font-size: large;
+    font-size: 17px;
 }
 .hero-buttons{
     display: flex;
@@ -951,7 +953,7 @@ ul li a{
     border-radius: 40px;
     background-color: #3498db;
     color: white;
-    padding: 20px 15px;
+    padding: 15px 10px;
     font-weight: bold;
 }
 
@@ -991,7 +993,7 @@ ul li a{
 }
 .services-text p{
     text-align: center;
-    font-size: large;
+    font-size: 17px;
 }
 .btn-content {
     display: flex;
@@ -999,9 +1001,9 @@ ul li a{
     justify-content: center;
 }
 .services button {
-    padding: 20px 10px;
+    padding: 15px 10px;
     margin: 10px;
-    font-size: 17px;
+    font-size: 16px;
 }
 .services h2 {
     font-size: xx-large;
@@ -1031,11 +1033,12 @@ ul li a{
     position: relative;
 }
 .card button {
-    padding: 15px 15px;
-    font-weight: 500;
+    padding: 15px 10px;
+    font-weight: bold;
+    font-size: 16px;
 }
 .card p{
-    font-size: large;
+    font-size: 17px;
 }
 
 
@@ -1049,7 +1052,7 @@ ul li a{
     margin-bottom: 1rem;
 }
 .how-it-works .how-it-work h1{
-   font-size: 28px;
+   font-size: 26px;
 }
 .how-it-works #steps{
     display: flex;
@@ -1070,7 +1073,7 @@ ul li a{
     padding: 1rem 0;
 }
 .step p{
-    font-size: large;
+    font-size: 17px;
 }
 
 
@@ -1080,20 +1083,21 @@ ul li a{
     padding: 0 10px;
 }
 #mental-health .img-content{
-    display: block;
-    height: 7rem;
+    display: none;
+    height: 0rem;
 }
 #mental-health h2{
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     color: #0D5F8E;
     width: 100%;
 }
 #mental-health p{
-    font-size: large;
+    font-size: 17px;
 }
 .health-contain button {
     padding: 15px 10px;
+    font-size: 17px;
 }
 
 
@@ -1105,21 +1109,20 @@ ul li a{
 #about-us h2{
     display: flex;
     justify-content: center;
-    font-size: 27px;
+    font-size: 26px;
 }
 #about-us h3{
     display: flex;
     justify-content: center;
-    font-size: 27px;
+    font-size: 26px;
 }
 #about-us p{
     text-align: center;
-    /* display: block; */
-    font-size: large;
+    font-size: 17px;
 }
 #about-us strong {
     color: #1e93d7;
-    font-size: large;
+    font-size: 15px;
 }
 #about-us img{
     width: 100%;
@@ -1153,13 +1156,13 @@ ul li a{
 #who-we-are h2{
     display: flex;
     justify-content: center;
-    font-size: 27px;
+    font-size: 26px;
 } 
 #who-we-are p{
     text-align: center;
     display: flex;
     margin: 0;
-    font-size: large;
+    font-size: 17px;
 } 
  #who-we-are .btn4 {
     display: flex;
@@ -1171,7 +1174,7 @@ ul li a{
 } 
 .btn4 button {
    padding: 15px 10px;
-   font-size: larger;
+   font-size: 16px;
    font-weight: bold;
    border-radius: 40px;
    border: none;
@@ -1182,6 +1185,7 @@ ul li a{
     background: #1286C8;
     border: none;
     color: #FFFFFF;
+    padding: 15px 10px;
 } 
 .btn4 .highlight:hover{
     background: #0056b3;
@@ -1200,7 +1204,7 @@ ul li a{
 
 #offer p{
     margin: 15px 0;
-    font-size: 16px;
+    font-size: 17px;
     gap: 30px;
 }
 #offer p img{
@@ -1227,11 +1231,11 @@ ul li a{
 }
 .patient h2{
     text-align: center;
-    font-size: 27px;
+    font-size: 26px;
 }
 .content-hold p{
     text-align: center;
-    font-size: large;
+    font-size: 17px;
 }
  .badge-content{
     margin-left: 0rem;
@@ -1295,15 +1299,27 @@ ul li a{
    padding: 0;
 }
 .review-card p{
-    font-size: large;
+    font-size: 17px;
     margin-top: 2rem;
     padding: 0;
 }
 .carousel-controls {
-    gap: 1rem;
+    gap: 10px;
+}
+.carousel-controls .arrow-btn{
+    width: 45px;
+    height: 45px;
+}
+.carousel-controls #right-btn{
+    width: 40px;
+    height: 40px;
 }
 .carousel-dots {
     gap: 5px;
+}
+.dot {
+    height: 8px;
+    width: 8px;
 }
 
 
@@ -1311,7 +1327,7 @@ ul li a{
 
 /* ALL ABOUT Wellness Article for You */
 .container4 h2{
-    font-size: 28px;
+    font-size: 26px;
 }
 .articles {
     display: block;
@@ -1322,12 +1338,35 @@ ul li a{
     padding: 15px 0;
 }
 .article p{
-    font-size: large;
+    font-size: 17px;
 }
 .content2, .content3 {
     display: none;
 }
+.article .flex-img {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.article .flex-img a {
+    font-size: 20px;
+}
+.article .flex-img a img {
+    width: 20px;
+    margin-left: 1rem;
+}
+.my-arrows{
+    gap: 3rem;
+}
+.my-arrows .left-arrow{
+  width: 46px;
+  height: 46px;
+}
 
+.my-arrows .right-arrow{
+    width: 40px;
+    height: 40px;
+}
 
 
 /* all about footer   */
@@ -1335,10 +1374,10 @@ ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 .footer-left p{
-    font-size: large;
+    font-size: 17px;
 }
 .footer-right {
     width: 100%;
@@ -1347,14 +1386,27 @@ ul li a{
 .footer-links {
     width: 100%;
 }
+.footer-links a{
+    font-size: 16px;
+}
 .form-content{
     width: 100%;
+    padding: 0px 0;
+}
+.newsletter form{
+    padding: 3px;
 }
 .newsletter p{
-    font-size: large;
+    font-size: 17px;
 }
 .form-content form input{
     width: 10rem;
+    font-size: 16px;
+}
+.form-content form button{
+    width: 10rem;
+    font-size: 16px;
+    padding: 15px 5px;
 }
 .img-contain{
     display: none;
