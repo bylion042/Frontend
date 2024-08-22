@@ -830,9 +830,11 @@ main {
     font-size: large;
     font-weight: 400;
 }
-
+.health-consultation-container{
+    width: 100%;
+}
 .image-content img {
-    margin-right: 5rem;
+    margin-right: 5rem 0;
     width: 100%;
     height: 500px;
 }
