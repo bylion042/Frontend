@@ -643,13 +643,12 @@ ul li{
 }
 ul li a{
     font-weight: 500;
+    font-size: large;
+}
+nav .fa-solid{
+    display: none;
 }
 
-.my-logo2{
-    display: block;
-    width: 8rem;
-    margin-left: 4rem;
-}
 
 
 
@@ -742,7 +741,7 @@ main {
     font-size: 25px;
 }
 .faq-section h3 {
-   margin-left: 1rem;
+   margin-left: 0rem;
    font-size: 30px;
    width: 100%;
 }

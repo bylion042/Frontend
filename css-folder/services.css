@@ -718,15 +718,12 @@ ul li{
     padding: 0px 0;
 }
 ul li a{
+    font-size: large;
     font-weight: 500;
 }
-    
-.my-logo2{
-    display: block;
-    width: 8rem;
-    margin-left: 4rem;
+nav .fa-solid{
+    display: none;
 }
-    
 
 
 

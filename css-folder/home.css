@@ -898,14 +898,11 @@ ul li{
 }
 ul li a{
     font-weight: 500;
+    font-size: large;
 }
-
-.my-logo2{
-    display: block;
-    width: 8rem;
-    margin-left: 4rem;
+nav .fa-solid{
+    display: none;
 }
-
 
 
 
