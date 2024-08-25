@@ -732,7 +732,7 @@ nav .fa-solid{
     margin-top: 3rem;
     text-align: center;
     background: url(../pro-health-PNG/Frame\ 213.png);
-    height: 52rem;
+    height:40rem;
     width: 100%;
     position: inherit;
 }
@@ -894,6 +894,482 @@ ul {
 .social-wellness-btn{
     padding: 4px;
     width: 310px;
+    gap: 5px;
+    background: none;
+}
+.social-wellness-btn img{
+    display: none;
+}
+
+.start-consultation {
+    padding: 15px 10px;
+    font-weight: 500;
+    font-size: 19px;
+    background: #f4f2f2;
+} 
+.get-answers {
+    padding: 15px 10px; 
+    font-weight: 600;
+    font-size: 18px;
+}
+.round-image {
+    margin-top: 2rem;
+    width: 100%;
+    height: 1000%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.physical-wellness {
+    border-bottom: none;
+}
+
+
+/* all about prescription service  */
+.background-content{
+    width: 100%;
+}
+.join-section1 {
+    background-image: none; 
+}   
+.prescription-services{
+    padding: 2rem 20px;
+}
+.prescription-services h2{
+    margin: 10px;
+    padding: 0;
+    font-size: 27px;
+    margin-top: 2rem;
+}
+.prescription-services p{
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+.btn3{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.prescription-services button{
+    margin: 0;
+    color: #1286C8;
+    background: none;
+}
+.prescription-services .book-appointment{
+    padding: 15px 0;
+    font-weight: 0;
+} 
+.prescription-services .btn3{
+    width: 55%;
+    display: flex;
+}
+.prescription-services .book-appointment{
+    border: none;
+    border-radius: 30px;
+    padding: 15px 0px;
+    font-weight: 0;
+    font-size: 16px;
+}
+.prescription-services .get-instant-help{
+    border: none;
+    border-radius: 30px;
+    padding: 15px 0px;
+    font-weight: 0;
+    font-size: 16px;
+}
+
+.prescription-services .get-instant-help {
+    font-weight: 500;
+}
+
+
+
+/* all about how it works  */
+.how-it-works{
+    width: 100%;
+}
+#steps{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.how-it-work h1 {
+    text-align: center;
+    margin-top: 0rem;
+    font-size: 26px;
+    width: 100%;
+}
+.step{
+    width: 100%;
+}
+.step h2{
+    font-size: 30px;
+}
+.step h3{
+    margin: 0;
+    font-size: 20px;
+}
+.step p{
+    font-size: 16px;
+    width: 100%;
+}
+
+
+/* ALL ABOUT featured Article for You */
+.container {
+    padding: 0;
+    width: 100%;
+}
+.container h2{
+    font-size: 26px;
+}
+.articles{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 205%;
+}
+.articles h3{
+    font-size: larger;
+    margin-bottom: 15px;
+}
+.article {
+    width: 49%;
+    margin: 0px 0;
+}
+.article p{
+    font-size: 16px;
+    width: 100%;
+}
+.article img {
+    height: auto;
+}
+.article .flex-img {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.article .flex-img a {
+    font-size: 20px;
+}
+.article .flex-img a img {
+    width: 20px;
+    margin-left: 1rem;
+}
+
+
+
+
+/* all about footer   */
+.footer-left section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.footer-left p{
+    font-size: 16px;
+}
+.footer-right {
+    width: 100%;
+    margin-right: 0rem;
+}
+.footer-links {
+    width: 100%;
+}
+.footer-links a{
+    font-size: 16px;
+}
+.form-content{
+    width: 100%;
+}
+.newsletter form{
+    padding: 3px;
+}
+.newsletter p{
+    font-size: 16px;
+}
+.form-content form input{
+    width: 10rem;
+    font-size: 16px;
+}
+.form-content form button{
+    width: 10rem;
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.img-contain{
+    display: none;
+}
+
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 701px) and (max-width: 900px) {
+
+
+    /* all about heaf content  */
+.tuggle{
+    display: block;
+}
+header {
+    padding:  5px 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+}
+.header-content .my-logo{
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+}
+.header-content section{
+    display: block;
+}
+.search-container{
+    width: 100%;
+}
+.search-container img{
+    left: 10px;
+    width: 20px;
+}
+.search-container input {
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 17px;
+    width: 100%;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.search-and-buttons{
+    display: none;
+}
+    
+    
+    /* all abpout nav bar  */
+nav {
+    display: none;
+}
+.tuggle{
+    font-size: xx-large;
+    color: #666869;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    position: relative;
+}
+nav ul {
+    padding: 1rem 1rem;
+    background: #e7f3fa;
+    gap: 40px;
+    width: 60%;
+    height: 40%;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    top: 65px;
+    left: 18rem;
+}
+ul li{
+    padding: 0px 0;
+}
+ul li a{
+    font-size: large;
+    font-weight: 500;
+}
+nav .fa-solid{
+    display: none;
+}
+
+
+
+/* ALL ABOUT SERVICE WE PROVIDE  */
+.services {
+    margin-top: 3rem;
+    text-align: center;
+    background: url(../pro-health-PNG/Frame\ 213.png);
+    height: 35rem;
+    width: 100%;
+    position: inherit;
+}
+.services h2{
+    padding: 2rem 0;
+    margin-top: 1rem;
+    color: #0D5F8E;
+    font-size: 35px;
+    font-weight: 500;
+    width: 100%;
+}
+.services-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.service-item{
+    width: 100%;
+}
+.service-item h3{
+    font-size: 27px;
+    font-weight: 500;
+}
+.service-item p{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ALL ABOUT HEALTH CONSULTATION  */
+
+main {
+    margin-top: 0rem;
+    padding: 50px 0;
+    width: 100%;
+}
+.health-consultation {
+    padding: 3rem 0rem;
+    width: 100%;
+}
+.health-consultation-container {
+    display: flex;
+    flex-direction: column;
+}
+.text-content h1{
+    font-size: 40px;
+    font-weight: 400;
+    padding: 0 0px;
+}
+.text-content p{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+.text-content .underline{
+    border-top: 1px solid #FFFFFF   ;
+    padding: 20px 2rem;
+}
+.text-content h3 {
+    padding: 0 1rem;
+    margin-top: 1rem;
+    font-size: 25px;
+    font-weight: 500;
+}
+.text-content ul {
+    margin-top: 1rem;
+    padding: 10px;
+}
+.text-content ul li{
+    width: 100%;
+    list-style: none;
+    font-size: 15px;
+}
+.text-content .btn {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    display: flex;
+    width: 100%;
+    padding: 0 0px;
+}
+.text-content .btn button{
+    padding: 0px 7px;
+    font-size: large;
+    font-weight: 500;
+}
+.text-content .btn .btn-1 button{
+    padding: 15px 5px;
+    font-size: large;
+    font-weight: 400;
+}
+.health-consultation-container{
+    width: 100%;
+}
+.image-content img {
+    margin-right: 9rem;
+    width: 100%;
+    height: 500px;
+}
+
+
+/* ALL ABOUT WELLNESS PROGRAM  */
+.container{
+    width: 100%;
+}
+.container .head1{
+    border: none;
+    padding: 20px;
+}
+.container h1 {
+    color: #107AB6;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+.container p {
+    width: 24rem;
+    font-size: 16px;
+}
+
+
+/* ALL ABOUT PHYICAL WELLNESS */
+.join-section .flex-2{
+    display: flex;
+}
+.join-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+}
+.head1 h1{
+    font-weight: 400;
+}
+.head1 p{
+    font-size: 16px;
+    width: 100%;
+}
+.physical-wellness p, .social-wellness p{
+    font-size: 16px;
+    width: 100%;
+}
+.physical-wellness , .social-wellness{
+    margin-left: 1rem;
+   width: 100%;
+}
+.physical-wellness h2, .social-wellness h2 {
+    margin-top: 2rem;
+}
+ul {
+    padding: 15px 15px;
+}
+.physical-wellness ul li strong, .social-wellness ul li strong{
+    font-size: 17px;
+}
+.physical-wellness ul li, .social-wellness ul li {
+    font-size: 15px;
+    width: 100%;
+}
+.social-wellness-btn{
+    padding: 10px 0;
+    width: 400px;
     gap: 5px;
     background: none;
 }

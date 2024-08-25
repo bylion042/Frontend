@@ -828,7 +828,6 @@ button img {
 
 
 /* MY MEDIA QUERRY  */
-  
 @media (max-width: 700px) {
 
 /* all about heaf content  */
@@ -1408,4 +1407,597 @@ nav .fa-solid{
 .img-contain{
     display: none;
 }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 701px) and (max-width: 900px) {
+    .tuggle{
+        display: block;
+    }
+    header {
+        padding:  5px 2rem;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: none;
+    }
+    .header-content .my-logo{
+        margin-right: 10rem;
+        margin-bottom: 2rem;
+    }
+    .header-content section{
+        display: block;
+    }
+    .search-container{
+        width: 100%;
+    }
+    .search-container img{
+        left: 10px;
+        width: 20px;
+    }
+    .search-container input {
+        padding: 15px 35px;
+        border-radius: 25px;
+        font-size: 17px;
+        width: 100%;
+    }
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .search-and-buttons{
+        display: none;
+    }
+    
+    
+    /* all abpout nav bar  */
+    nav {
+        display: none;
+    }
+    .tuggle{
+        font-size: xx-large;
+        color: #666869;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        position: relative;
+    }
+    nav ul {
+        padding: 1rem 1rem;
+        background: #e7f3fa;
+        gap: 40px;
+        width: 60%;
+        height: 40%;
+        text-align: center;
+        flex-direction: column;
+        position: absolute;
+        border-radius: 30px;
+        border-top-right-radius: 0px;
+        top: 65px;
+        left: 18rem;
+    }
+    ul li{
+        padding: 0px 0;
+    }
+    ul li a{
+        font-weight: 500;
+        font-size: large;
+    }
+    nav .fa-solid{
+        display: none;
+    }
+    
+    
+    
+    /* all about  hero content  */
+    .hero-content{
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-content .h2{
+        text-align: center;
+        align-items: center;
+        font-size: large;
+    }
+    .hero-content .join{
+        margin-left: 0;
+        text-align: center;
+        width: 95%;
+        margin-left: 10px;
+    }
+    .hero-image{
+        display: none;
+    }
+    .hero-frame {
+        display: block;
+        width: 100%;
+    }
+    .join p{
+        font-size: 17px;
+    }
+    .hero-buttons{
+        display: flex;
+        margin-left: 15px;
+    }
+    .hero-buttons button {
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        background: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: #1286C8;
+    }
+    .hero-buttons button.highlight {
+        border-radius: 40px;
+        background-color: #3498db;
+        color: white;
+        padding: 15px 10px;
+        font-weight: bold;
+    }
+    
+    
+        /* about services we provide  */
+    .services {
+        padding: 10px 15px;
+    }
+    .services .swp{
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+    .services .swp h2{
+        font-size: 26px;
+    }
+    .services-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .services-content img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .services-content .Doctors{
+        display: none;
+    }
+    .services-content .doctor{
+        display: block;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .services-text {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .services-text p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .btn-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .services button {
+        padding: 15px 10px;
+        margin: 10px;
+        font-size: 16px;
+    }
+    .services h2 {
+        font-size: xx-large;
+    }
+    
+    
+    /* all about cards  */
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card:first-child::before, .card:last-child::before {
+      display: none;
+    }
+    .card:first-child::before {
+        display: none;
+    }
+    .card:last-child::before {
+        display: none;  
+    }
+    .card {
+        width: 90%;
+        text-align: center;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: relative;
+    }
+    .card button {
+        padding: 15px 10px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .card p{
+        font-size: 17px;
+    }
+    
+    
+    
+    
+    
+    /* all about how it works  */
+    .how-it-works .how-it-work{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .how-it-works .how-it-work h1{
+       font-size: 26px;
+    }
+    .how-it-works #steps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .step {
+        border-radius: 10px;
+        padding: 0 5px;
+        width: 97%;
+    }
+    .step h2{
+        font-size: 30px;
+    }
+    .step h3{
+        font-size: 20px;
+        margin: 0;
+        padding: 1rem 0;
+    }
+    .step p{
+        font-size: 17px;
+    }
+    
+    
+    /* all about mental health  */
+    #mental-health{
+        margin-bottom: 3rem;
+        padding: 0 10px;
+    }
+    #mental-health .img-content{
+        display: none;
+        height: 0rem;
+    }
+    #mental-health h2{
+        font-size: 26px;
+        font-weight: bold;
+        color: #0D5F8E;
+        width: 100%;
+    }
+    #mental-health p{
+        font-size: 17px;
+    }
+    .health-contain button {
+        padding: 15px 10px;
+        font-size: 17px;
+    }
+    
+    
+    /* ALL ABOUT - ABOUT US  */
+    #about-us{
+        padding: 0 15px;
+        margin-bottom: 3rem;
+    }
+    #about-us h2{
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+    }
+    #about-us h3{
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+    }
+    #about-us p{
+        text-align: center;
+        font-size: 17px;
+    }
+    #about-us strong {
+        color: #1e93d7;
+        font-size: 15px;
+    }
+    #about-us img{
+        width: 100%;
+    }
+    
+    
+    /* all abou .join-section2  */
+    .join-section2{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .join-section2-img{
+        display: none;
+    }
+    .join-section5-img{
+        padding: 0 15px;
+        display: block;
+    }
+    .join-section2 .hold{
+       padding: 0 20px;
+       max-width: 100%;
+    }
+    .hold{
+        width: 100%;
+    }
+    #who-we-are{
+       border-bottom: 2px solid #B6B6B6;
+    } 
+    #who-we-are h2{
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+    } 
+    #who-we-are p{
+        text-align: center;
+        display: flex;
+        margin: 0;
+        font-size: 17px;
+    } 
+     #who-we-are .btn4 {
+        display: flex;
+        flex-direction: column;
+        background: none;
+        width: 200px;
+        justify-content: center;
+        margin-left: 4rem;
+    } 
+    .btn4 button {
+       padding: 15px 10px;
+       font-size: 16px;
+       font-weight: bold;
+       border-radius: 40px;
+       border: none;
+       background: #FAFCFE;
+       color: #107AB6;
+    } 
+    .btn4 .highlight {
+        background: #1286C8;
+        border: none;
+        color: #FFFFFF;
+        padding: 15px 10px;
+    } 
+    .btn4 .highlight:hover{
+        background: #0056b3;
+    }
+    #offer{
+        margin-bottom: 4rem;
+    }
+    #offer h2{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 2rem;
+        font-size: 24px;
+    }
+    
+    #offer p{
+        margin: 15px 0;
+        font-size: 17px;
+        gap: 30px;
+    }
+    #offer p img{
+        width: 3rem;
+        height: 3rem;
+    }
+    #offer  strong{
+        padding: 15px 0 0;
+    } 
+    
+    
+    /* all about patient  */
+    .patient{
+        width: 100%;
+        padding: 50px 20px;
+        margin-top: 1rem;
+        background: #F9FEFF;
+    }
+    .patient .patient-content{
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        margin-bottom: 0rem;
+    }
+    .patient h2{
+        text-align: center;
+        font-size: 26px;
+    }
+    .content-hold p{
+        text-align: center;
+        font-size: 17px;
+    }
+     .badge-content{
+        margin-left: 0rem;
+        margin-bottom: 4rem;
+    } 
+    .badge-content h5{
+        font-size: 17px;
+    }
+    
+    
+    
+    .carousel-container{
+        width: 100;
+    }
+    .carousel {
+        display: flex;
+        width: 100%;
+    }
+    .carousel .carousel-item .active{
+        display: block;
+    }
+    #item-0, #item-2{
+        display: none;
+    }
+    .carousel-item {
+        opacity: 0;
+        transform: scale(0.8);
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .flex-all{
+        padding: 10px 15px;
+        width: 65%;
+    }
+    .flex-all h4{
+        margin-bottom: 0px;
+    }
+    .stars{
+        width: 0%;
+    }
+    .carousel-item.active {
+        opacity: 1;
+        transform: scale(1);
+    }
+    .profile{
+        width: 100%;
+        gap: 0;
+    }
+    .profile .patient-1{
+        width: 100px;
+        height: 100px;
+    }
+    .review-card {
+        padding: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        height: 27rem;
+    }
+    .review-card .profile{
+       padding: 0;
+    }
+    .review-card p{
+        font-size: 17px;
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .carousel-controls {
+        gap: 10px;
+    }
+    .carousel-controls .arrow-btn{
+        width: 45px;
+        height: 45px;
+    }
+    .carousel-controls #right-btn{
+        width: 40px;
+        height: 40px;
+    }
+    .carousel-dots {
+        gap: 5px;
+    }
+    .dot {
+        height: 8px;
+        width: 8px;
+    }
+    
+    
+    
+    
+    /* ALL ABOUT Wellness Article for You */
+    .container4 h2{
+        font-size: 26px;
+    }
+    .articles {
+        display: block;
+    }
+    .article {
+        width: 100%;
+        margin: 0;
+        padding: 15px 0;
+    }
+    .article p{
+        font-size: 17px;
+    }
+    .content2, .content3 {
+        display: none;
+    }
+    .article .flex-img {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+    }
+    .article .flex-img a {
+        font-size: 20px;
+    }
+    .article .flex-img a img {
+        width: 20px;
+        margin-left: 1rem;
+    }
+    .my-arrows{
+        gap: 3rem;
+    }
+    .my-arrows .left-arrow{
+      width: 46px;
+      height: 46px;
+    }
+    
+    .my-arrows .right-arrow{
+        width: 40px;
+        height: 40px;
+    }
+    
+    
+    /* all about footer   */
+    .footer-left section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+    .footer-left p{
+        font-size: 17px;
+    }
+    .footer-right {
+        width: 100%;
+        margin-right: 0rem;
+    }
+    .footer-links {
+        width: 100%;
+    }
+    .footer-links a{
+        font-size: 16px;
+    }
+    .form-content{
+        width: 100%;
+        padding: 0px 0;
+    }
+    .newsletter form{
+        padding: 3px;
+    }
+    .newsletter p{
+        font-size: 17px;
+    }
+    .form-content form input{
+        width: 10rem;
+        font-size: 16px;
+    }
+    .form-content form button{
+        width: 10rem;
+        font-size: 16px;
+        padding: 15px 5px;
+    }
+    .img-contain{
+        display: none;
+    }
 }
