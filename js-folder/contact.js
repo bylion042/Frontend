@@ -48,6 +48,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         user: "BBYLION" // Set the user as BBYLION
     };
 
+    
     // Send POST request to the contact endpoint
     fetch("https://class-contact-form.onrender.com/contact", {
         method: "POST",
@@ -82,7 +83,9 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     });
 });
 
+
 // Function to retrieve form messages
+// This function retrieves all messages associated with the user BBYLION from the server.
 function retrieveMessages() {
     fetch("https://class-contact-form.onrender.com/BBYLION/contacts", {
         method: "GET"
@@ -96,8 +99,7 @@ function retrieveMessages() {
     });
 }
 
-// Optionally, call retrieveMessages() to load messages when needed
-// retrieveMessages();
+
 
 
 

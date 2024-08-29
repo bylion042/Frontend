@@ -1,4 +1,4 @@
-
+// all about nav underline 
 // Select all anchor tags inside the nav
 const navLinks = document.querySelectorAll('nav ul li a');
 
@@ -19,6 +19,7 @@ navLinks.forEach(link => {
 
 
 
+// all about Patient Reviews 
 
 document.addEventListener("DOMContentLoaded", () => {
     const items = document.querySelectorAll(".carousel-item");
@@ -27,26 +28,33 @@ document.addEventListener("DOMContentLoaded", () => {
     const rightBtn = document.getElementById("right-btn");
     let currentIndex = 0; // Start with the first item active
 
+    function updateSliderPosition() {
+        const carousel = document.querySelector(".carousel");
+        const translateXValue = -(currentIndex * 33.33); // Calculate translation based on current index
+        carousel.style.transform = `translateX(${translateXValue}%)`; // Slide to the current set of items
+    }
+
     function showItem(index) {
         items.forEach((item, i) => {
-            item.classList.toggle("active", i === index);
+            item.classList.toggle("active", i >= index && i < index + 3); // Activate 3 items at a time
         });
         dots.forEach((dot, i) => {
             dot.classList.toggle("active", i === index);
         });
+        updateSliderPosition(); // Update the slider position
     }
 
     leftBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 3; // Adjust to show 3 items
         showItem(currentIndex);
     });
 
     rightBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+        currentIndex = (currentIndex < items.length - 3) ? currentIndex + 1 : 0; // Adjust to show 3 items
         showItem(currentIndex);
     });
 
-    // Show the first item initially
+    // Show the first 3 items initially
     showItem(currentIndex);
 });
 
@@ -55,40 +63,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+// all about Health Article 
 function swapLeft() {
     const articles = document.querySelector('.articles');
-    const content1 = document.querySelector('.content1');
-    const content2 = document.querySelector('.content2');
-    const content3 = document.querySelector('.content3');
-
-    // Rotate positions: content1 -> content2, content2 -> content3, content3 -> content1
-    articles.insertBefore(content1, content3.nextSibling);
-    
-    // Update class names to reflect the new order
-    content1.className = 'content3 article';
-    content2.className = 'content1 article';
-    content3.className = 'content2 article';
+    const contentItems = Array.from(articles.children);
+    articles.appendChild(contentItems[0]);
 }
 
 function swapRight() {
     const articles = document.querySelector('.articles');
-    const content1 = document.querySelector('.content1');
-    const content2 = document.querySelector('.content2');
-    const content3 = document.querySelector('.content3');
-
-    // Rotate positions: content3 -> content2, content2 -> content1, content1 -> content3
-    articles.insertBefore(content3, content1);
-    
-    // Update class names to reflect the new order
-    content1.className = 'content2 article';
-    content2.className = 'content3 article';
-    content3.className = 'content1 article';
+    const contentItems = Array.from(articles.children);
+    articles.insertBefore(contentItems[contentItems.length - 1], contentItems[0]);
 }
 
 
 
 
 
+// all about small screen hand boga 
 document.querySelector('.tuggle').addEventListener('click', function() {
     const nav = document.querySelector('nav');
     const icon = this.querySelector('i');

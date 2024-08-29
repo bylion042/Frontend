@@ -447,11 +447,13 @@ ul {
 }
 .container .articles{
     display: flex;
+    gap: 2rem;
+    padding: 40px;
 }
 .article {
     width: 34%;
-    margin: 20px;
-    padding: 20px;
+    margin: 0px;
+    padding: 0px;
     vertical-align: top;
 }
 .article img {
