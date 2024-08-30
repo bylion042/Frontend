@@ -489,18 +489,21 @@ button img {
 
 .patient{
     width: 100%;
-    padding: 40px;
+    padding: 0px;
     margin-top: 5rem;
     background: #F9FEFF;
 }
 .patient .patient-content{
     display: flex;
-    gap: 25rem;
+    gap: 20rem;
     margin-bottom: 5rem;
 }
 .patient h2{
     color: #0D5F8E;
     font-size: xx-large;
+}
+.content-hold{
+    padding: 0 3rem;
 }
 .content-hold p{
     padding: 1rem 0;
@@ -529,82 +532,89 @@ button img {
 
 
 
-.carousel-container {
-    width: 100%;
-    margin: auto;
-    position: relative;
+.new-articles {
+    display: flex;
     overflow: hidden;
-}
-.carousel {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
     width: 100%;
-    transition: transform 0.5s ease-in-out;
-}
-.carousel-item {
-    flex: 1 0 25%;
-    min-width: 32%;
-    width: 100%;
-    flex-shrink: 0; 
-}
-.carousel-item .profile{
-    display: flex;
-    padding: 1rem ;
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
-.carousel-item.active {
-    opacity: 1;
-    transform: scale(1);
-}
-.flex-all{
-    padding: 0 15px;
-    color: #107AB6;
-}
-.flex-all h4{
-    color: #1286C8;
-    margin-bottom: 5px;
-}
-.review-card {
+.new-carousel-item {
+    width: 33.333%; /* Show 3 items at a time */
+    flex-shrink: 0;
+    box-sizing: border-box;
     padding: 20px;
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    height: 20rem;
-}
-.review-card p{
-    color: #3C4047;
-    margin-top: 10px;
-    padding: 0 1rem;
-    font-size: larger;
-}
-.carousel-controls {
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    align-items: center;
-    margin-top: 2rem;
-    cursor: pointer;
-}
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-.dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-}
-.dot.active {
-    background-color: #7BC9DE;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0.5; /* Default appearance */
+    transform: scale(0.9); /* Default scale */
 }
 
+.new-carousel-item.active {
+    opacity: 1; /* Highlight active item */
+    transform: scale(1); /* Scale up active item */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.new-review-card {
+    padding: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    height: 25rem;
+}
+
+.new-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new-patient-1 {
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    margin-right: 15px;
+}
+
+.new-flex-all {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-flex-all h4 {
+    margin: 0;
+    color: #107AB6;
+    font-size: 20px;
+}
+
+.new-flex-all h3 {
+    margin: 0;
+    color: #107AB6;
+    font-size: x-large;
+}
+
+.new-stars img {
+    width: 150px; /* Adjust size as needed */
+}
+.new-review-card p{
+    font-size: larger;
+    font-weight: 500;
+    margin-top: 3rem;
+}
+
+.new-my-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+.new-left-arrow, .new-right-arrow {
+    cursor: pointer;
+}
+.carousel-container{
+    display: none;
+  }
 
 
 
@@ -680,7 +690,9 @@ button img {
     overflow: hidden;
     width: 100%;
 }
-
+.health-container{
+    display: none;
+}
 
 
 
@@ -1254,126 +1266,155 @@ nav .fa-solid{
 
 
 
+/* THIS IS FOR SMALL SCREENS */
+.container3{
+    display: none;
+}
 .carousel-container{
-    width: 100;
-}
-.carousel {
-    display: flex;
-    width: 100%;
-}
-.carousel .carousel-item .active{
     display: block;
-}
-#item-0, #item-2{
-    display: none;
-}
-.carousel-item {
-    opacity: 0;
-    transform: scale(0.8);
-    padding: 0;
-    margin: 0;
     width: 100%;
+    margin-bottom: 5rem;
 }
-.flex-all{
-    padding: 10px 15px;
-    width: 65%;
-}
-.flex-all h4{
-    margin-bottom: 0px;
-}
-.stars{
-    width: 0%;
-}
-.carousel-item.active {
-    opacity: 1;
-    transform: scale(1);
-}
-.profile{
+.new-carousel-item {
     width: 100%;
-    gap: 0;
-}
-.profile .patient-1{
-    width: 100px;
-    height: 100px;
-}
-.review-card {
+    flex-shrink: 0;
+    box-sizing: border-box;
     padding: 20px;
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    height: 27rem;
+    opacity: 1; /* Default appearance */
+    transform: scale(1); /* Default scale */
 }
-.review-card .profile{
-   padding: 0;
+.new-review-card {
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    height: 25rem;
 }
-.review-card p{
-    font-size: 17px;
-    margin-top: 2rem;
-    padding: 0;
+.new-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
-.carousel-controls {
-    gap: 10px;
+.new-patient-1 {
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    margin-right: 15px;
 }
-.carousel-controls .arrow-btn{
-    width: 45px;
-    height: 45px;
+.new-flex-all {
+    display: flex;
+    flex-direction: column;
 }
-.carousel-controls #right-btn{
-    width: 40px;
-    height: 40px;
-}
-.carousel-dots {
-    gap: 5px;
-}
-.dot {
-    height: 8px;
-    width: 8px;
-}
-
-
-
-
-/* ALL ABOUT Wellness Article for You */
-.container4 h2{
-    font-size: 26px;
-}
-.articles {
-    display: block;
-}
-.article {
-    width: 100%;
+.new-flex-all h4 {
     margin: 0;
-    padding: 15px 0;
+    color: #0A4A6E;
+    font-size: large;
 }
-.article p{
+.new-flex-all h3 {
+    margin: 0;
+    color: #0A4A6E;
+    font-size: larger;
+}
+.new-stars img {
+    width: 150px; /* Adjust size as needed */
+}
+.new-review-card p{
     font-size: 17px;
+    color: #3C4047;
 }
-.content2, .content3 {
+.carousel-container .view-all-btn, .close-btn{
+    border-radius: 25px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 8rem;
+}
+
+
+
+
+
+  /* ALL ABOUT Wellness Article for SMALL SCRENS */
+.container4, .my-arrows {
     display: none;
 }
-.article .flex-img {
+.health-container{
+    display: block;
+    margin-bottom: 5rem;
+}
+.health-articles .article-item {
+    display: none;
+    margin-bottom: 3rem;
+}
+.health-articles .article-first1 {
+    display: block;
+}
+.health-container {
+    width: 100%;
+    padding:  20px;
+}
+.health-container h2 {
+    color: #0D5F8E;
+    font-size: 27px ;
+    margin: 0 2rem;
+}
+.health-articles{
+    width: 100%;
+}
+.article-item img {
+    width: 100%;
+    height: auto;
+}
+.article-item h3 {
+    font-size: large;
+    margin: 20px 0;
+    color: #3C4047;
+}
+.article-item p {
+    font-size: 0.9em;
+    color: #3C4047;
+    font-size: 17px;
+}
+.article-item .link-container {
     padding: 20px 0;
     display: flex;
     align-items: center;
 }
-.article .flex-img a {
-    font-size: 20px;
+.article-item .link-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size:20px;
+    color: #359EBB;
 }
-.article .flex-img a img {
+.article-item .link-container a img {
     width: 20px;
     margin-left: 1rem;
 }
-.my-arrows{
-    gap: 3rem;
+
+
+
+
+.toggle-buttons {
+    text-align: center;
+    margin-top: 20px;
 }
-.my-arrows .left-arrow{
-  width: 46px;
-  height: 46px;
+.toggle-buttons #hideAllBtn, #showAllBtn{
+    border-radius: 25px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 0rem;
 }
 
-.my-arrows .right-arrow{
-    width: 40px;
-    height: 40px;
-}
+
 
 
 /* all about footer   */

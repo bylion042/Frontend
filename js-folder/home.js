@@ -21,42 +21,66 @@ navLinks.forEach(link => {
 
 // all about Patient Reviews 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const items = document.querySelectorAll(".carousel-item");
-    const dots = document.querySelectorAll(".dot");
-    const leftBtn = document.getElementById("left-btn");
-    const rightBtn = document.getElementById("right-btn");
-    let currentIndex = 0; // Start with the first item active
+// showItem(0); // Initialize the carousel
+function updateActiveItem() {
+    const articles = document.querySelector('.new-articles');
+    const items = Array.from(articles.children);
 
-    function updateSliderPosition() {
-        const carousel = document.querySelector(".carousel");
-        const translateXValue = -(currentIndex * 33.33); // Calculate translation based on current index
-        carousel.style.transform = `translateX(${translateXValue}%)`; // Slide to the current set of items
-    }
+    // Remove active class from all items
+    items.forEach(item => item.classList.remove('active'));
 
-    function showItem(index) {
-        items.forEach((item, i) => {
-            item.classList.toggle("active", i >= index && i < index + 3); // Activate 3 items at a time
-        });
-        dots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === index);
-        });
-        updateSliderPosition(); // Update the slider position
-    }
+    // Get the index of the middle item
+    const visibleItems = items.slice(0, 3); // Get the first 3 items
+    const middleIndex = Math.floor(visibleItems.length / 2);
 
-    leftBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 3; // Adjust to show 3 items
-        showItem(currentIndex);
-    });
+    // Add active class to the middle item
+    visibleItems[middleIndex].classList.add('active');
+}
 
-    rightBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex < items.length - 3) ? currentIndex + 1 : 0; // Adjust to show 3 items
-        showItem(currentIndex);
-    });
+function swapNewLeft() {
+    const articles = document.querySelector('.new-articles');
+    const items = Array.from(articles.children);
+    articles.appendChild(items[0]); // Move the first item to the end
 
-    // Show the first 3 items initially
-    showItem(currentIndex);
+    // Update the active item after moving
+    updateActiveItem();
+}
+
+function swapNewRight() {
+    const articles = document.querySelector('.new-articles');
+    const items = Array.from(articles.children);
+    articles.insertBefore(items[items.length - 1], items[0]); // Move the last item to the front
+
+    // Update the active item after moving
+    updateActiveItem();
+}
+
+// Initialize the active item on page load
+document.addEventListener('DOMContentLoaded', () => {
+    updateActiveItem();
 });
+
+
+
+
+
+
+// THIS IS FOR SMALL SCREENZ 
+function showAllItems() {
+    const hiddenItems = document.querySelector('.hidden-items');
+    hiddenItems.style.display = 'block';
+    
+    const viewAllBtn = document.querySelector('.view-all-btn');
+    viewAllBtn.style.display = 'none';
+}
+
+function hideAllItems() {
+    const hiddenItems = document.querySelector('.hidden-items');
+    hiddenItems.style.display = 'none';
+    
+    const viewAllBtn = document.querySelector('.view-all-btn');
+    viewAllBtn.style.display = 'block';
+}
 
 
 
@@ -75,6 +99,28 @@ function swapRight() {
     const contentItems = Array.from(articles.children);
     articles.insertBefore(contentItems[contentItems.length - 1], contentItems[0]);
 }
+
+
+
+
+
+// ALL ABOUT Wellness Article for SMALL SCRENS
+const showAllBtn = document.getElementById('showAllBtn');
+const hideAllBtn = document.getElementById('hideAllBtn');
+const articles = document.querySelectorAll('.health-articles .article-item');
+
+showAllBtn.addEventListener('click', () => {
+    articles.forEach(article => article.style.display = 'block');
+    showAllBtn.style.display = 'none';
+    hideAllBtn.style.display = 'inline-block';
+});
+
+hideAllBtn.addEventListener('click', () => {
+    articles.forEach(article => article.style.display = 'none');
+    articles[0].style.display = 'block'; // Keep the first article visible
+    hideAllBtn.style.display = 'none';
+    showAllBtn.style.display = 'inline-block';
+});
 
 
 
