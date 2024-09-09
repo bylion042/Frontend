@@ -1,0 +1,2074 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.tuggle{
+    display: none;
+}
+
+header {
+    padding:  5px 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.search-and-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+.search-container img{
+    position: absolute;
+    top: 50%;
+    left: 8rem;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+.header-content section{
+    display: none;
+}
+.search-container input {
+    padding-left: 50px;
+    font-size: larger;
+    padding: 20px 10rem;
+    border-radius: 30px;
+    background: #F4F5F6;
+    border: none;
+}
+.search-and-buttons{
+    gap: 5px;
+    padding: 5px;
+    border-radius: 30px;
+    background: #F4F5F6 ;
+    display: flex;
+    justify-content: space-around;
+}
+.search-and-buttons button {
+    padding: 20px 20px;
+    border: none;
+    color: #1286C8;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 30px;
+    background: #FFFFFF;
+}
+
+.search-and-buttons button.highlight {
+    background-color: #1286C8;
+    color: #fff;
+}
+.search-and-buttons button.highlight:hover {
+    background: #005bb5;
+}
+
+/* Existing styles */
+
+nav ul {
+    padding: 15px;
+    margin: 0rem auto;
+    background: #e7f3fa;
+    gap: 6rem;
+    width: 85%;
+    display: flex; 
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+nav ul li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: larger;
+}
+nav ul li.active {
+    border-bottom: 3px solid #60AEDA;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 5px;
+    position: relative;
+}
+.my-logo2{
+    display: none;
+}
+
+
+
+
+
+.hero-content {
+    padding: 3rem 2rem;
+    display: flex;
+}
+.hero-content .h2{
+     font-size: xX-large;
+     color: #0D5F8E;
+}
+.hero-content .join{
+    margin-left: 15rem;
+}
+.hero p {
+    color: #0A4A6E;
+    font-size: larger;  
+}
+.hero-buttons {
+    margin-top: 20px;
+    display: flex;
+}
+.hero-buttons button {
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-size: 19px;
+    font-weight: bold;
+    color: #1286C8;
+}
+.hero-buttons button.highlight {
+    border-radius: 40px;
+    background-color: #3498db;
+    color: white;
+    padding: 25px 20px;
+    font-weight: bold;
+}
+.hero-buttons button.highlight:hover{
+    background: #005bb5;
+}
+.hero-frame{
+    display: none;
+}
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+
+
+
+#join-section{
+    background: #F4F5F6;
+    padding: 1px 0;
+    margin: 2rem 0;
+}
+.services {
+    padding: 20px 40px;
+    gap: 5rem;
+    margin-bottom: 4rem;
+}
+.services h2{
+    color: #0D5F8E;
+    padding: 20px 0;
+    font-size: xx-large;
+}
+.services-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.services-content .doctor{
+     display: none;
+}
+.services-content img {
+    width: 50%;
+}
+.services-text {
+    max-width: 50%;
+    text-align: left;
+    margin-left: 50px;
+}
+.services-text p {
+    color: #0A4A6E;
+    font-size: larger;
+}
+.services button {
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 19px;
+    color: #1286C8;
+    border-radius: 40px;
+    padding: 25px 30px;
+}
+.services button.highlight {
+    background-color: #1286C8;
+    color: white;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+.services button.highlight:hover{
+    background: #005bb5;
+}
+
+
+
+
+/* cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+.card {
+    width: 23%;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+.card img{
+    width: 100%;
+}
+.card h3 {
+    color: #0D5F8E;
+    padding: 15px 0;
+}
+.card p {
+    color: #0A4A6E;
+    padding: 0 8px;
+    margin: 5px 0;
+    font-size: larger;
+}
+.card button {
+    margin: 40px 0;
+    padding: 25px 40px;
+    border: none;
+    border-radius: 40px;
+    background-color: #DEF2FE;
+    color: #107AB6;
+    font-weight: bold;
+    font-size: 19px;
+    cursor: pointer;
+}
+.card button:hover{
+    background: #EDF8FA;
+}
+
+.card:first-child::before, .card:last-child::before {
+    content: '';
+    position: absolute;
+    top: -20px; 
+    bottom: -20px; 
+    border-radius: 5px;
+    width: 40px; 
+    background-color: #BCE7F5; 
+}
+.card:first-child::before {
+    left: -40px; 
+}
+.card:last-child::before {
+    right: -40px; 
+}
+
+
+
+
+
+.how-it-works{
+    margin-bottom: 3rem;
+}
+.how-it-work h1 {
+    color: #0D5F8E;
+    padding: 10px 20px;
+    display: flex;
+    margin-left: 1rem;
+    font-size: xx-large;
+}
+#steps {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.step {
+    border-radius: 10px;
+    padding: 5px;
+    width: 30%;
+}
+.step h2{
+   font-size: 50px;
+   padding: 5px 0;
+   color: #107AB6;
+}
+.step h3{
+   color: #656C77;
+   margin-bottom: 3rem;
+   font-size: x-large;
+}
+.step p{
+    color: #656C77;
+    font-size: larger;
+}
+
+
+
+
+#mental-health {    
+    width: 95%;
+    background-size: cover;
+    margin: 1rem auto 0;
+    height: 500px;
+    background-image: url(../img/minimalistic-science-banner-with-stethoscope\ 2.png) ;
+}
+#mental-health .img-content{
+    display: none;
+}
+.health-contain{
+    padding: 5rem 0;
+}
+
+#mental-health h2{
+    font-size: 45px;
+    font-weight: bolder;
+    color: #0D5F8E;
+}
+#mental-health p{
+    padding: 20px 0;
+    color: #0A4A6E;
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+.health-contain button {
+    background-color: #EDF8FA;
+    color: #359EBB;
+    border: none;
+    padding: 25px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.health-contain button:hover{
+    color: #1286C8;
+}
+button img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+
+#about-us{
+    padding: 0 40px;
+    margin-bottom: 3rem;
+}
+#about-us h2{
+    margin-bottom: 2rem;
+    font-size: xx-large;
+    color: #0D5F8E;
+}
+#about-us h3{
+    padding: 20px 0;
+    font-size: xx-large;
+    color: #0D5F8E;
+}
+#about-us p{
+    color: #0A4A6E;
+    font-size: larger;
+}
+#about-us strong {
+    color: #0A4A6E;
+}
+#about-us img{
+    width: 100%;
+}
+
+
+
+
+.join-section2{
+    display: flex;
+    gap: 12rem;
+}
+.join-section2-img{
+    padding: 0 40px;
+    margin-left: 4rem;
+}
+.join-section5-img{
+    display: none;
+}
+.join-section2 .hold{
+   padding: 0 40px;
+   max-width: 45%;
+}
+.hold{
+    width: 50rem ;
+}
+#who-we-are{
+   border-bottom: 2px solid #B6B6B6;
+} 
+#who-we-are h2{
+    margin-bottom: 40px;
+    color: #0D5F8E;
+    font-size: xx-large;
+} #who-we-are p{
+    margin-bottom: 2rem;
+    color: #0A4A6E;
+    font-size: larger;
+} 
+ #who-we-are .btn4 {
+    border: none;
+    background: #E6EDEE;
+    border-radius: 40px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    width: 425px;
+} 
+.btn4 button {
+   padding: 23px 30px;
+   font-size: larger;
+   font-weight: bold;
+   border-radius: 40px;
+   border: none;
+   background: #FAFCFE;
+   color: #107AB6;
+} 
+.btn4 .highlight {
+    background: #1286C8;
+    border: none;
+    color: #FFFFFF;
+} 
+.btn4 .highlight:hover{
+    background: #0056b3;
+}
+    
+#offer h2{
+    color: #0D5F8E;
+    padding: 70px 0;
+    font-size: xx-large;
+    margin: 0;
+}
+
+#offer p{
+    margin-bottom: 50px;
+    display: flex;   
+    font-size: 22px;
+    gap: 2rem;
+}
+#offer  strong{
+    padding: 25px 0 0;
+    color: #656C77;
+} 
+
+
+
+
+
+.patient{
+    width: 100%;
+    padding: 0px;
+    margin-top: 5rem;
+    background: #F9FEFF;
+}
+.patient .patient-content{
+    display: flex;
+    gap: 20rem;
+    margin-bottom: 5rem;
+}
+.patient h2{
+    color: #0D5F8E;
+    font-size: xx-large;
+}
+.content-hold{
+    padding: 0 3rem;
+}
+.content-hold p{
+    padding: 1rem 0;
+    color: #656C77;
+    margin-top: 1rem;
+    font-size: larger;
+}
+ .badge-content{
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    border: none;
+    background: #F4F5F6;
+    border-radius: 10px;
+    padding: 5px 15px;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-left: 35rem;
+} 
+.badge-content h5{
+    display: flex;
+    align-items: center;
+    font-size: large;
+} 
+
+
+
+
+.new-articles {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.new-carousel-item {
+    width: 33.333%; /* Show 3 items at a time */
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0.5; /* Default appearance */
+    transform: scale(0.9); /* Default scale */
+}
+
+.new-carousel-item.active {
+    opacity: 1; /* Highlight active item */
+    transform: scale(1); /* Scale up active item */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.new-review-card {
+    padding: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    height: 25rem;
+}
+
+.new-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new-patient-1 {
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    margin-right: 15px;
+}
+
+.new-flex-all {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-flex-all h4 {
+    margin: 0;
+    color: #107AB6;
+    font-size: 20px;
+}
+
+.new-flex-all h3 {
+    margin: 0;
+    color: #107AB6;
+    font-size: x-large;
+}
+
+.new-stars img {
+    width: 150px; /* Adjust size as needed */
+}
+.new-review-card p{
+    font-size: larger;
+    font-weight: 500;
+    margin-top: 3rem;
+}
+
+.new-my-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 5rem 0 ;
+    align-items: center;
+}
+.new-left-arrow, .new-right-arrow {
+    cursor: pointer;
+}
+.carousel-container{
+    display: none;
+  }
+
+
+
+
+/* ALL ABOUT Wellness Article for You */
+.container4 {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding:  20px;
+}
+.container4 h2 {
+    color: #0D5F8E;
+    font-size: xx-large ;
+    margin: 0 2rem;
+}
+.articles{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.article {
+    width: 31%; /* Show 3 items at a time */
+    flex-shrink: 0;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px 0;
+    vertical-align: top;
+}
+.article img {
+    width: 100%;
+    height: auto;
+}
+.article h3 {
+    font-size: 1.4em;
+    margin: 20px 0;
+    color: #3C4047;
+}
+.article p {
+    font-size: 0.9em;
+    color: #3C4047;
+    font-size: larger;
+}
+.article .flex-img {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.article .flex-img a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: x-large;
+    color: #359EBB;
+}
+.article .flex-img a img {
+    width: 2rem;
+    margin-left: 1rem;
+}
+.article a:hover {
+    text-decoration: underline;
+}
+.my-arrows{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+.articles {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+.health-container{
+    display: none;
+}
+
+
+
+/* ALL ABOUT FOOTER  */
+
+.footer {
+    background-color: #107AB6;
+    color: white;
+    padding: 40px 20px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+.footer-left section{
+    margin: 1rem 0;
+}
+.footer-left {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #EBF7FB;
+    font-size: larger;
+}
+.social-icons{
+    display: flex;
+    gap: 1rem;
+}
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+.footer-right {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 30rem;
+}
+.footer-links {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 700px;
+}
+.footer-links a {
+    color: white;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: larger;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.newsletter {
+    margin-bottom: 20px;
+}
+.newsletter h2 {
+    padding: 1rem 0;
+    margin-top: 35px;
+    color: #EBF7FB;
+}
+.newsletter p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #EBF7FB;
+    font-size: larger;
+}
+.form-content form input{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 35px;
+}
+.form-content button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+.form-content button:hover {
+    background-color: #003d82;
+}
+.hold-all{
+    display: flex;
+    gap:20rem;
+    margin-bottom: 2rem;
+}
+.newsletter form{
+    gap: 5px;
+    padding: 5px;
+    border-radius: 30px;
+    background: #CDD3D8;
+    display: flex;
+    justify-content: space-around;
+}
+.newsletter input{
+    padding: 0px 10px;
+    color: #656C77;
+    background: #FFFFFF;
+    font-size: larger;
+}
+.newsletter button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: large;
+    color: #FFFFFF;
+    background: #1286C8;
+}
+.newsletter button:hover {
+    background: #107AB6;
+    color: #FFFFFF;
+}
+.img-contain{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    left: 20rem;
+}
+.img-contain .img1{
+    position: absolute;
+    right: 4rem;
+}
+.img-contain .img2{
+    position: absolute;
+    bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+
+/* MY MEDIA QUERRY  */
+@media (max-width: 700px) {
+
+/* all about heaf content  */
+.tuggle{
+    display: block;
+}
+header {
+    padding:  5px 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+}
+.header-content .my-logo{
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+}
+.header-content section{
+    display: block;
+}
+.search-container img{
+    left: 10px;
+    width: 20px;
+}
+.search-container input {
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 17px;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.search-and-buttons{
+    display: none;
+}
+
+
+/* all abpout nav bar  */
+nav {
+    display: none;
+}
+.tuggle{
+    font-size: xx-large;
+    color: #666869;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    position: relative;
+}
+nav ul {
+    padding: 1rem 1rem;
+    background: #e7f3fa;
+    gap: 15px;
+    width: 80%;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    top: 65px;
+    left: 3rem;
+}
+ul li{
+    padding: 0px 0;
+}
+ul li a{
+    font-weight: 500;
+    font-size: large;
+}
+nav .fa-solid{
+    display: none;
+}
+
+
+
+/* all about  hero content  */
+.hero-content{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.hero-content .h2{
+    text-align: center;
+    align-items: center;
+    font-size: large;
+}
+.hero-content .join{
+    margin-left: 0;
+    text-align: center;
+    width: 95%;
+    margin-left: 10px;
+}
+.hero-image{
+    display: none;
+}
+.hero-frame {
+    display: block;
+    width: 100%;
+}
+.join p{
+    font-size: 17px;
+}
+.hero-buttons{
+    display: flex;
+    margin-left: 15px;
+}
+.hero-buttons button {
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1286C8;
+}
+.hero-buttons button.highlight {
+    border-radius: 40px;
+    background-color: #3498db;
+    color: white;
+    padding: 15px 10px;
+    font-weight: bold;
+}
+
+
+    /* about services we provide  */
+.services {
+    padding: 10px 15px;
+}
+.services .swp{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.services .swp h2{
+    font-size: 26px;
+}
+.services-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.services-content img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.services-content .Doctors{
+    display: none;
+}
+.services-content .doctor{
+    display: block;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.services-text {
+    max-width: 100%;
+    margin-left: 0;
+}
+.services-text p{
+    text-align: center;
+    font-size: 17px;
+}
+.btn-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.services button {
+    padding: 15px 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+.services h2 {
+    font-size: xx-large;
+}
+
+
+/* all about cards  */
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card:first-child::before, .card:last-child::before {
+  display: none;
+}
+.card:first-child::before {
+    display: none;
+}
+.card:last-child::before {
+    display: none;  
+}
+.card {
+    width: 90%;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+.card button {
+    padding: 15px 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.card p{
+    font-size: 17px;
+}
+
+
+
+
+
+/* all about how it works  */
+.how-it-works .how-it-work{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.how-it-works .how-it-work h1{
+   font-size: 26px;
+}
+.how-it-works #steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.step {
+    border-radius: 10px;
+    padding: 0 5px;
+    width: 97%;
+}
+.step h2{
+    font-size: 30px;
+}
+.step h3{
+    font-size: 20px;
+    margin: 0;
+    padding: 1rem 0;
+}
+.step p{
+    font-size: 17px;
+}
+
+
+/* all about mental health  */
+#mental-health{
+    margin-bottom: 3rem;
+    padding: 0 10px;
+}
+#mental-health .img-content{
+    display: none;
+    height: 0rem;
+}
+#mental-health h2{
+    font-size: 26px;
+    font-weight: bold;
+    color: #0D5F8E;
+    width: 100%;
+}
+#mental-health p{
+    font-size: 17px;
+}
+.health-contain button {
+    padding: 15px 10px;
+    font-size: 17px;
+}
+
+
+/* ALL ABOUT - ABOUT US  */
+#about-us{
+    padding: 0 15px;
+    margin-bottom: 3rem;
+}
+#about-us h2{
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+}
+#about-us h3{
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+}
+#about-us p{
+    text-align: center;
+    font-size: 17px;
+}
+#about-us strong {
+    color: #1e93d7;
+    font-size: 15px;
+}
+#about-us img{
+    width: 100%;
+}
+
+
+/* all abou .join-section2  */
+.join-section2{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.join-section2-img{
+    display: none;
+}
+.join-section5-img{
+    padding: 0 15px;
+    display: block;
+}
+.join-section2 .hold{
+   padding: 0 20px;
+   max-width: 100%;
+}
+.hold{
+    width: 100%;
+}
+#who-we-are{
+   border-bottom: 2px solid #B6B6B6;
+} 
+#who-we-are h2{
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+} 
+#who-we-are p{
+    text-align: center;
+    display: flex;
+    margin: 0;
+    font-size: 17px;
+} 
+ #who-we-are .btn4 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    width: 200px;
+    justify-content: center;
+    margin-left: 4rem;
+} 
+.btn4 button {
+   padding: 15px 10px;
+   font-size: 16px;
+   font-weight: bold;
+   border-radius: 40px;
+   border: none;
+   background: #FAFCFE;
+   color: #107AB6;
+} 
+.btn4 .highlight {
+    background: #1286C8;
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 10px;
+} 
+.btn4 .highlight:hover{
+    background: #0056b3;
+}
+#offer{
+    margin-bottom: 4rem;
+}
+#offer h2{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+    font-size: 24px;
+}
+
+#offer p{
+    margin: 15px 0;
+    font-size: 17px;
+    gap: 30px;
+}
+#offer p img{
+    width: 3rem;
+    height: 3rem;
+}
+#offer  strong{
+    padding: 15px 0 0;
+} 
+
+
+/* all about patient  */
+.patient{
+    width: 100%;
+    padding: 50px 20px;
+    margin-top: 1rem;
+    background: #F9FEFF;
+}
+.patient .patient-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    margin-bottom: 0rem;
+}
+.patient h2{
+    text-align: center;
+    font-size: 26px;
+}
+.content-hold p{
+    text-align: center;
+    font-size: 17px;
+}
+ .badge-content{
+    margin-left: 0rem;
+    margin-bottom: 4rem;
+} 
+.badge-content h5{
+    font-size: 17px;
+}
+
+
+
+/* THIS IS FOR SMALL SCREENS */
+.container3{
+    display: none;
+}
+.carousel-container{
+    display: block;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.new-carousel-item {
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    opacity: 1; /* Default appearance */
+    transform: scale(1); /* Default scale */
+}
+.new-review-card {
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    height: 25rem;
+}
+.new-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.new-patient-1 {
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    margin-right: 15px;
+}
+.new-flex-all {
+    display: flex;
+    flex-direction: column;
+}
+.new-flex-all h4 {
+    margin: 0;
+    color: #0A4A6E;
+    font-size: large;
+}
+.new-flex-all h3 {
+    margin: 0;
+    color: #0A4A6E;
+    font-size: larger;
+}
+.new-stars img {
+    width: 150px; /* Adjust size as needed */
+}
+.new-review-card p{
+    font-size: 17px;
+    color: #3C4047;
+}
+.carousel-container .view-all-btn, .close-btn{
+    border-radius: 25px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 8rem;
+}
+
+
+  /* ALL ABOUT Wellness Article for SMALL SCRENS */
+.container4, .my-arrows {
+    display: none;
+}
+.health-container{
+    display: block;
+    margin-bottom: 5rem;
+}
+.health-articles .article-item {
+    display: none;
+    margin-bottom: 3rem;
+}
+.health-articles .article-first1 {
+    display: block;
+}
+.health-container {
+    width: 100%;
+    padding:  20px;
+}
+.health-container h2 {
+    color: #0D5F8E;
+    font-size: 27px ;
+    margin: 0 2rem;
+}
+.health-articles{
+    width: 100%;
+}
+.article-item img {
+    width: 100%;
+    height: auto;
+}
+.article-item h3 {
+    font-size: large;
+    margin: 20px 0;
+    color: #3C4047;
+}
+.article-item p {
+    font-size: 0.9em;
+    color: #3C4047;
+    font-size: 17px;
+}
+.article-item .link-container {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.article-item .link-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size:20px;
+    color: #359EBB;
+}
+.article-item .link-container a img {
+    width: 20px;
+    margin-left: 1rem;
+}
+
+.toggle-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.toggle-buttons #hideAllBtn, #showAllBtn{
+    border-radius: 25px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 0rem;
+}
+
+
+
+
+/* all about footer   */
+.footer-left section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.footer-left p{
+    font-size: 17px;
+}
+.footer-right {
+    width: 100%;
+    margin-right: 0rem;
+}
+.footer-links {
+    width: 100%;
+}
+.footer-links a{
+    font-size: 16px;
+}
+.form-content{
+    width: 100%;
+    padding: 0px 0;
+}
+.newsletter form{
+    padding: 3px;
+}
+.newsletter p{
+    font-size: 17px;
+}
+.form-content form input{
+    width: 10rem;
+    font-size: 16px;
+}
+.form-content form button{
+    width: 10rem;
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.img-contain{
+    display: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 701px) and (max-width: 900px) {
+    .tuggle{
+        display: block;
+    }
+    header {
+        padding:  5px 2rem;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: none;
+    }
+    .header-content .my-logo{
+        margin-right: 10rem;
+        margin-bottom: 2rem;
+    }
+    .header-content section{
+        display: block;
+    }
+    .search-container{
+        width: 100%;
+    }
+    .search-container img{
+        left: 10px;
+        width: 20px;
+    }
+    .search-container input {
+        padding: 15px 35px;
+        border-radius: 25px;
+        font-size: 17px;
+        width: 100%;
+    }
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .search-and-buttons{
+        display: none;
+    }
+    
+    
+    /* all abpout nav bar  */
+    nav {
+        display: none;
+    }
+    .tuggle{
+        font-size: xx-large;
+        color: #666869;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        position: relative;
+    }
+    nav ul {
+        padding: 1rem 1rem;
+        background: #e7f3fa;
+        gap: 40px;
+        width: 60%;
+        height: 40%;
+        text-align: center;
+        flex-direction: column;
+        position: absolute;
+        border-radius: 30px;
+        border-top-right-radius: 0px;
+        top: 65px;
+        left: 18rem;
+    }
+    ul li{
+        padding: 0px 0;
+    }
+    ul li a{
+        font-weight: 500;
+        font-size: large;
+    }
+    nav .fa-solid{
+        display: none;
+    }
+    
+    
+    
+    /* all about  hero content  */
+    .hero-content{
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-content .h2{
+        text-align: center;
+        align-items: center;
+        font-size: large;
+    }
+    .hero-content .join{
+        margin-left: 0;
+        text-align: center;
+        width: 95%;
+        margin-left: 10px;
+    }
+    .hero-image{
+        display: none;
+    }
+    .hero-frame {
+        display: block;
+        width: 100%;
+    }
+    .join p{
+        font-size: 17px;
+    }
+    .hero-buttons{
+        display: flex;
+        margin-left: 15px;
+    }
+    .hero-buttons button {
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        background: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: #1286C8;
+    }
+    .hero-buttons button.highlight {
+        border-radius: 40px;
+        background-color: #3498db;
+        color: white;
+        padding: 15px 10px;
+        font-weight: bold;
+    }
+    
+    
+        /* about services we provide  */
+    .services {
+        padding: 10px 15px;
+    }
+    .services .swp{
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+    .services .swp h2{
+        font-size: 26px;
+    }
+    .services-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .services-content img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .services-content .Doctors{
+        display: none;
+    }
+    .services-content .doctor{
+        display: block;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .services-text {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .services-text p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .btn-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .services button {
+        padding: 15px 10px;
+        margin: 10px;
+        font-size: 16px;
+    }
+    .services h2 {
+        font-size: xx-large;
+    }
+    
+    
+    /* all about cards  */
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card:first-child::before, .card:last-child::before {
+      display: none;
+    }
+    .card:first-child::before {
+        display: none;
+    }
+    .card:last-child::before {
+        display: none;  
+    }
+    .card {
+        width: 90%;
+        text-align: center;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: relative;
+    }
+    .card button {
+        padding: 15px 10px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .card p{
+        font-size: 17px;
+    }
+    
+    
+    
+    
+    
+    /* all about how it works  */
+    .how-it-works .how-it-work{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .how-it-works .how-it-work h1{
+       font-size: 26px;
+    }
+    .how-it-works #steps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .step {
+        border-radius: 10px;
+        padding: 0 5px;
+        width: 97%;
+    }
+    .step h2{
+        font-size: 30px;
+    }
+    .step h3{
+        font-size: 20px;
+        margin: 0;
+        padding: 1rem 0;
+    }
+    .step p{
+        font-size: 17px;
+    }
+    
+    
+    /* all about mental health  */
+    #mental-health{
+        margin-bottom: 3rem;
+        padding: 0 10px;
+    }
+    #mental-health .img-content{
+        display: none;
+        height: 0rem;
+    }
+    #mental-health h2{
+        font-size: 26px;
+        font-weight: bold;
+        color: #0D5F8E;
+        width: 100%;
+    }
+    #mental-health p{
+        font-size: 17px;
+    }
+    .health-contain button {
+        padding: 15px 10px;
+        font-size: 17px;
+    }
+    
+    
+    /* ALL ABOUT - ABOUT US  */
+    #about-us{
+        padding: 0 15px;
+        margin-bottom: 3rem;
+    }
+    #about-us h2{
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+    }
+    #about-us h3{
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+    }
+    #about-us p{
+        text-align: center;
+        font-size: 17px;
+    }
+    #about-us strong {
+        color: #1e93d7;
+        font-size: 15px;
+    }
+    #about-us img{
+        width: 100%;
+    }
+    
+    
+    /* all abou .join-section2  */
+    .join-section2{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .join-section2-img{
+        display: none;
+    }
+    .join-section5-img{
+        padding: 0 15px;
+        display: block;
+    }
+    .join-section2 .hold{
+       padding: 0 20px;
+       max-width: 100%;
+    }
+    .hold{
+        width: 100%;
+    }
+    #who-we-are{
+       border-bottom: 2px solid #B6B6B6;
+    } 
+    #who-we-are h2{
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+    } 
+    #who-we-are p{
+        text-align: center;
+        display: flex;
+        margin: 0;
+        font-size: 17px;
+    } 
+     #who-we-are .btn4 {
+        display: flex;
+        flex-direction: column;
+        background: none;
+        width: 200px;
+        justify-content: center;
+        margin-left: 4rem;
+    } 
+    .btn4 button {
+       padding: 15px 10px;
+       font-size: 16px;
+       font-weight: bold;
+       border-radius: 40px;
+       border: none;
+       background: #FAFCFE;
+       color: #107AB6;
+    } 
+    .btn4 .highlight {
+        background: #1286C8;
+        border: none;
+        color: #FFFFFF;
+        padding: 15px 10px;
+    } 
+    .btn4 .highlight:hover{
+        background: #0056b3;
+    }
+    #offer{
+        margin-bottom: 4rem;
+    }
+    #offer h2{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 2rem;
+        font-size: 24px;
+    }
+    
+    #offer p{
+        margin: 15px 0;
+        font-size: 17px;
+        gap: 30px;
+    }
+    #offer p img{
+        width: 3rem;
+        height: 3rem;
+    }
+    #offer  strong{
+        padding: 15px 0 0;
+    } 
+    
+    
+    /* all about patient  */
+    .patient{
+        width: 100%;
+        padding: 50px 20px;
+        margin-top: 1rem;
+        background: #F9FEFF;
+    }
+    .patient .patient-content{
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        margin-bottom: 0rem;
+    }
+    .patient h2{
+        text-align: center;
+        font-size: 26px;
+    }
+    .content-hold p{
+        text-align: center;
+        font-size: 17px;
+    }
+     .badge-content{
+        margin-left: 0rem;
+        margin-bottom: 4rem;
+    } 
+    .badge-content h5{
+        font-size: 17px;
+    }
+    
+    
+  /* THIS IS FOR SMALL SCREENS */
+.container3{
+    display: none;
+}
+.carousel-container{
+    display: block;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.new-carousel-item {
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    opacity: 1; /* Default appearance */
+    transform: scale(1); /* Default scale */
+}
+.new-review-card {
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    height: 25rem;
+}
+.new-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.new-patient-1 {
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    margin-right: 15px;
+}
+.new-flex-all {
+    display: flex;
+    flex-direction: column;
+}
+.new-flex-all h4 {
+    margin: 0;
+    color: #0A4A6E;
+    font-size: large;
+}
+.new-flex-all h3 {
+    margin: 0;
+    color: #0A4A6E;
+    font-size: larger;
+}
+.new-stars img {
+    width: 150px; /* Adjust size as needed */
+}
+.new-review-card p{
+    font-size: 17px;
+    color: #3C4047;
+}
+.carousel-container .view-all-btn, .close-btn{
+    border-radius: 25px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 20rem;
+}
+    
+    
+    
+
+  /* ALL ABOUT Wellness Article for SMALL SCRENS */
+  .container4, .my-arrows {
+    display: none;
+}
+.health-container{
+    display: block;
+    margin-bottom: 5rem;
+}
+.health-articles .article-item {
+    display: none;
+    margin-bottom: 3rem;
+}
+.health-articles .article-first1 {
+    display: block;
+}
+.health-container {
+    width: 100%;
+    padding:  20px;
+}
+.health-container h2 {
+    color: #0D5F8E;
+    font-size: 27px ;
+    margin: 0 2rem;
+}
+.health-articles{
+    width: 100%;
+}
+.article-item img {
+    width: 100%;
+    height: auto;
+}
+.article-item h3 {
+    font-size: large;
+    margin: 20px 0;
+    color: #3C4047;
+}
+.article-item p {
+    font-size: 0.9em;
+    color: #3C4047;
+    font-size: 17px;
+}
+.article-item .link-container {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.article-item .link-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size:20px;
+    color: #359EBB;
+}
+.article-item .link-container a img {
+    width: 20px;
+    margin-left: 1rem;
+}
+
+.toggle-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.toggle-buttons #hideAllBtn, #showAllBtn{
+    border-radius: 25px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 0rem;
+}
+    
+
+
+ 
+    
+    /* all about footer   */
+    .footer-left section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+    .footer-left p{
+        font-size: 17px;
+    }
+    .footer-right {
+        width: 100%;
+        margin-right: 0rem;
+    }
+    .footer-links {
+        width: 100%;
+    }
+    .footer-links a{
+        font-size: 16px;
+    }
+    .form-content{
+        width: 100%;
+        padding: 0px 0;
+    }
+    .newsletter form{
+        padding: 3px;
+    }
+    .newsletter p{
+        font-size: 17px;
+    }
+    .form-content form input{
+        width: 10rem;
+        font-size: 16px;
+    }
+    .form-content form button{
+        width: 10rem;
+        font-size: 16px;
+        padding: 15px 5px;
+    }
+    .img-contain{
+        display: none;
+    }
+}
