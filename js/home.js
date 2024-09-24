@@ -91,13 +91,14 @@ function hideAllItems() {
 function swapLeft() {
     const articles = document.querySelector('.articles');
     const contentItems = Array.from(articles.children);
-    articles.appendChild(contentItems[0]);
+    articles.insertBefore(contentItems[contentItems.length - 1], contentItems[0]);
 }
 
 function swapRight() {
     const articles = document.querySelector('.articles');
     const contentItems = Array.from(articles.children);
-    articles.insertBefore(contentItems[contentItems.length - 1], contentItems[0]);
+    articles.appendChild(contentItems[0]);
+
 }
 
 
