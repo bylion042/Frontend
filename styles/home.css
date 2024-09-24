@@ -1085,7 +1085,7 @@ button img {
         text-align: center;
         align-items: center;
         font-size: large;
-        padding: 0 9px;
+        padding: 0 8px;
     }
 
     .hero-content .join {
@@ -1226,15 +1226,16 @@ button img {
         position: relative;
     }
 
-    .card button {
-        padding: 15px 10px;
-        font-weight: bold;
-        font-size: 16px;
-    }
-
     .card p {
         font-size: 17px;
     }
+
+    .card button {
+        padding: 15px 10px;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
 
 
 
@@ -1587,7 +1588,10 @@ button img {
     .health-container h2 {
         color: #0D5F8E;
         font-size: 27px;
-        margin: 0 2rem;
+        margin: 2rem 0rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
     }
 
     .health-articles {
@@ -1658,6 +1662,14 @@ button img {
         justify-content: center;
         align-items: center;
         margin: 2rem 0;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 2rem;
     }
 
     .footer-left p {

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 0.1px solid red; */
 }
 
 body {
@@ -174,7 +175,6 @@ article .power{
 
 main {
     padding:  0 3rem;
-    /* margin-top: 26rem; */
     position: relative;
     margin-top: -40px;
 }
@@ -464,41 +464,54 @@ ul {
 
 
 
-/* ALL ABOUT FEATURED ARTICLE  */
 
-.container {
+/* ALL ABOUT Wellness Article for You */
+.container4 {
     width: 100%;
-    margin: 4rem 0;
+    margin: auto;
     overflow: hidden;
+    padding: 20px;
 }
-.container h2 {
+
+.container4 h2 {
     color: #0D5F8E;
-    font-size: xx-large ;
+    font-size: xx-large;
     margin: 0 2rem;
+    font-weight: bold;
 }
-.container .articles{
+
+.articles {
     display: flex;
-    gap: 2rem;
-    padding: 40px;
+    justify-content: space-between;
+    width: 100%;
+    /* transition: transform 5s ease; */
+
 }
+
 .article {
-    width: 34%;
-    margin: 0px;
-    padding: 0px;
+    width: 31%;
+    flex-shrink: 0;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px 0;
     vertical-align: top;
 }
+
 .article img {
     width: 100%;
     height: auto;
 }
+
 .article h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin: 20px 0;
     color: #3C4047;
 }
+
 .article p {
+    font-size: 0.9em;
+    color: #3C4047;
     font-size: larger;
-   color: #3C4047;
 }
 
 .article .flex-img {
@@ -506,6 +519,7 @@ ul {
     display: flex;
     align-items: center;
 }
+
 .article .flex-img a {
     display: flex;
     align-items: center;
@@ -514,12 +528,32 @@ ul {
     font-size: x-large;
     color: #359EBB;
 }
+
 .article .flex-img a img {
-    width: 2rem;
+    width: 24px;
     margin-left: 1rem;
 }
+
 .article a:hover {
     text-decoration: underline;
+}
+
+.my-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+
+.articles {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.health-container {
+    display: none;
 }
 
 
@@ -817,7 +851,7 @@ main {
 .text-content h1{
     font-size: 40px;
     font-weight: 400;
-    padding: 0 0px;
+    padding: 0 10px;
 }
 .text-content p{
     width: 100%;
@@ -845,13 +879,15 @@ main {
 }
 .text-content .btn {
     margin-top: 1rem;
-    margin-left: 0rem;
+    margin-left: 2rem;
     display: flex;
-    width: 100%;
+    width: 50%;
     padding: 0 0px;
+    display: flex;
+    flex-direction: column;
 }
 .text-content .btn button{
-    padding: 0px 7px;
+    padding: 17px 7px;
     font-size: large;
     font-weight: 500;
 }
@@ -895,7 +931,9 @@ main {
     flex-direction: column;
     width: 100%;
     padding: 0 15px;
+    gap: 0rem;
 }
+
 .head1 h1{
     font-weight: 400;
 }
@@ -903,15 +941,29 @@ main {
     font-size: 16px;
     width: 100%;
 }
+.flex-2{
+    width: 95%;
+    margin: 0;
+    padding: 0;
+}
+.physical-wellness{
+    width: 100%;
+}
+
+.physical-wellness p{
+    width: 50rem;
+}
 .physical-wellness p, .social-wellness p{
     font-size: 16px;
-    width: 83%;
+    width: 20rem;
+    
 }
 .physical-wellness , .social-wellness{
-   width: 25rem;
+   width: 100%;
 }
 .physical-wellness h2, .social-wellness h2 {
     margin-top: 2rem;
+    width: 20rem;
 }
 ul {
     padding: 15px 15px;
@@ -921,14 +973,24 @@ ul {
     font-size: 17px;
 }
 .physical-wellness ul li, .social-wellness ul li {
+    width: 100%;
     font-size: 15px;
-    width: 80%;
+    width: 19rem;
+}
+.social-wellness{
+    width: 140%;
+    margin: 0;
+    padding: 0;
 }
 .social-wellness-btn{
     padding: 4px;
     width: 310px;
     gap: 5px;
     background: none;
+    width: 100%;
+}
+.image-container{
+    margin: 2rem 0;
 }
 .social-wellness-btn img{
     display: none;
@@ -946,7 +1008,7 @@ ul {
     font-size: 18px;
 }
 .round-image {
-    margin-top: 2rem;
+    margin-top: 0rem;
     width: 100%;
     height: 1000%;
     border-radius: 50%;
@@ -963,6 +1025,7 @@ ul {
 }
 .join-section1 {
     background-image: none; 
+    height: 450px;
 }   
 .prescription-services{
     padding: 2rem 20px;
@@ -1025,7 +1088,7 @@ ul {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0;
+    padding: 0 15px;
     margin: 0;
 }
 .how-it-work h1 {
@@ -1050,54 +1113,94 @@ ul {
 }
 
 
-/* ALL ABOUT featured Article for You */
-.container {
-    padding: 0;
+/* ALL ABOUT Wellness Article for SMALL SCRENS */
+.container4,
+.my-arrows {
+    display: none;
+}
+
+.health-container {
+    display: block;
+    margin-bottom: 5rem;
+}
+
+.health-articles .article-item {
+    display: none;
+    margin-bottom: 3rem;
+}
+
+.health-articles .article-first1 {
+    display: block;
+}
+
+.health-container {
     width: 100%;
-    margin: 0;
+    padding: 20px;
 }
-.container .articles {
-    display: flex;
-    gap: 2rem;
-    padding: 10px;
+
+.health-container h2 {
+    color: #0D5F8E;
+    font-size: 27px;
+    margin: 0 2rem;
 }
-.container h2{
-    font-size: 26px;
-}
-.articles{
-    margin-right: 2rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-.article {
-    width: 100%;
-    margin: 0;
-}
-.articles h3{
-    font-size: larger;
-    margin-bottom: 15px;
-}
-.article p{
-    font-size: 16px;
+
+.health-articles {
     width: 100%;
 }
-.article img {
+
+.article-item img {
+    width: 100%;
     height: auto;
 }
-.article .flex-img {
+
+.article-item h3 {
+    font-size: large;
+    margin: 20px 0;
+    color: #3C4047;
+}
+
+.article-item p {
+    font-size: 0.9em;
+    color: #3C4047;
+    font-size: 17px;
+}
+
+.article-item .link-container {
     padding: 20px 0;
     display: flex;
     align-items: center;
 }
-.article .flex-img a {
+
+.article-item .link-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     font-size: 20px;
+    color: #359EBB;
 }
-.article .flex-img a img {
+
+.article-item .link-container a img {
     width: 20px;
     margin-left: 1rem;
+}
+
+.toggle-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.toggle-buttons #hideAllBtn,
+#showAllBtn {
+    border-radius: 25px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 0rem;
 }
 
 
@@ -1393,7 +1496,7 @@ main {
 }
 .physical-wellness , .social-wellness{
     margin-left: 1rem;
-   width: 100%;
+   width: 99%;
 }
 .physical-wellness h2, .social-wellness h2 {
     margin-top: 2rem;
@@ -1629,3 +1732,17 @@ ul {
 }
 
 }    
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 901px) and (max-width: 1000px){
+
+}

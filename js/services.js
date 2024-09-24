@@ -14,6 +14,49 @@ navLinks.forEach(link => {
 });
 
 
+
+
+// all about Health Article 
+function swapLeft() {
+    const articles = document.querySelector('.articles');
+    const contentItems = Array.from(articles.children);
+    articles.insertBefore(contentItems[contentItems.length - 1], contentItems[0]);
+}
+
+function swapRight() {
+    const articles = document.querySelector('.articles');
+    const contentItems = Array.from(articles.children);
+    articles.appendChild(contentItems[0]);
+
+}
+
+
+
+
+
+// ALL ABOUT Wellness Article for SMALL SCRENS
+const showAllBtn = document.getElementById('showAllBtn');
+const hideAllBtn = document.getElementById('hideAllBtn');
+const articles = document.querySelectorAll('.health-articles .article-item');
+
+showAllBtn.addEventListener('click', () => {
+    articles.forEach(article => article.style.display = 'block');
+    showAllBtn.style.display = 'none';
+    hideAllBtn.style.display = 'inline-block';
+});
+
+hideAllBtn.addEventListener('click', () => {
+    articles.forEach(article => article.style.display = 'none');
+    articles[0].style.display = 'block'; // Keep the first article visible
+    hideAllBtn.style.display = 'none';
+    showAllBtn.style.display = 'inline-block';
+});
+
+
+
+
+
+
 document.querySelector('.tuggle').addEventListener('click', function() {
     const nav = document.querySelector('nav');
     const icon = this.querySelector('i');
