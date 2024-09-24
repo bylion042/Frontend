@@ -1085,7 +1085,13 @@ button img {
         text-align: center;
         align-items: center;
         font-size: large;
-        padding: 0 8px;
+        padding: 0 7px;
+        /* font-weight: 00; */
+    }
+    .hero-content h2 {
+        font-size: 35px;
+        color: #0D5F8E;
+        font-weight: 500;
     }
 
     .hero-content .join {
@@ -1145,9 +1151,7 @@ button img {
 
     .swp h2 {
         font-size: 20px;
-        font-weight: bolder;
     }
-
     .services-content {
         flex-direction: column;
         align-items: center;
@@ -1176,7 +1180,7 @@ button img {
     
     .services h2 {
         font-size: xx-large;
-        font-weight: bold;
+        font-weight: lighter;
     }
 
     .services-text p {
