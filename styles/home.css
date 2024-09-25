@@ -245,12 +245,14 @@ nav ul li a {
     border-radius: 40px;
     padding: 15px 20px;
 }
+
 .services button.highlight {
     background-color: #1286C8;
     color: white;
     font-weight: bolder;
     margin-left: 10px;
 }
+
 .services button.highlight:hover {
     background: #005bb5;
 }
@@ -266,6 +268,7 @@ nav ul li a {
     margin-bottom: 5rem;
     position: relative;
 }
+
 .card {
     width: 23%;
     text-align: center;
@@ -274,22 +277,26 @@ nav ul li a {
     position: relative;
     border-radius: 0;
 }
+
 .card img {
     width: 100%;
 }
+
 .card h3 {
     color: #0D5F8E;
     padding: 20px 0;
     font-weight: bolder;
     font-size: 23px;
 }
+
 .card p {
     color: #0A4A6E;
     padding: 0 8px;
     margin: 5px 0;
     font-size: larger;
 }
-.cards .card button{
+
+.cards .card button {
     margin: 50px 80px;
     padding: 15px 0px;
     border: none;
@@ -301,9 +308,11 @@ nav ul li a {
     cursor: pointer;
     width: 55%;
 }
+
 .card button:hover {
     background: #EDF8FA;
 }
+
 .card:first-child::before,
 .card:last-child::before {
     content: '';
@@ -314,9 +323,11 @@ nav ul li a {
     width: 30px;
     background-color: #BCE7F5;
 }
+
 .card:first-child::before {
     left: -31px;
 }
+
 .card:last-child::before {
     right: -31px;
 }
@@ -536,6 +547,7 @@ button img {
 .btn4 .highlight:hover {
     background: #0056b3;
 }
+
 #offer h2 {
     color: #0D5F8E;
     padding: 30px 0;
@@ -613,7 +625,13 @@ button img {
 }
 
 
-
+/* <!-- ALL ABOUT carousel  --> */
+.container3 h2 {
+    color: #0D5F8E;
+    font-size: xx-large;
+    margin: 0 3rem;
+    font-weight: bold;
+}
 
 .new-articles {
     display: flex;
@@ -630,25 +648,21 @@ button img {
     flex-shrink: 0;
     box-sizing: border-box;
     padding: 20px;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.6s ease-in-out;
     opacity: 0.5;
-    /* Default appearance */
-    transform: scale(0.9);
-    /* Default scale */
+    transform: scale(0.8);
 }
 
 .new-carousel-item.active {
     opacity: 1;
-    /* Highlight active item */
     transform: scale(1);
-    /* Scale up active item */
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: transform 0.6s ease-in-out, opacity 0.9s ease-in-out;
 }
 
 .new-review-card {
     padding: 40px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    height: 25rem;
+    height: 27rem;
 }
 
 .new-profile {
@@ -991,40 +1005,33 @@ button img {
     .tuggle {
         display: block;
     }
-
     header {
         padding: 5px 2rem;
         justify-content: space-between;
         align-items: center;
         border-bottom: none;
     }
-
     .header-content .my-logo {
         margin-right: 10rem;
         margin-bottom: 2rem;
     }
-
     .header-content section {
         display: block;
     }
-
     .search-container img {
         left: 10px;
         width: 20px;
     }
-
     .search-container input {
-        padding: 15px 35px;
+        padding: 15px 54px;
         border-radius: 25px;
         font-size: 17px;
     }
-
     .header-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
     .search-and-buttons {
         display: none;
     }
@@ -1034,7 +1041,6 @@ button img {
     nav {
         display: none;
     }
-
     .tuggle {
         font-size: xx-large;
         color: #666869;
@@ -1044,9 +1050,8 @@ button img {
         margin-top: 2rem;
         position: relative;
     }
-
     nav ul {
-        padding: 0 1rem;
+        padding: 2rem;
         background: #e7f3fa;
         gap: 15px;
         width: 80%;
@@ -1055,19 +1060,16 @@ button img {
         position: absolute;
         border-radius: 30px;
         border-top-right-radius: 0px;
-        top: 50px;
+        top: 60px;
         left: 3rem;
     }
-
     ul li {
         padding: 0px 0;
     }
-
     ul li a {
         font-weight: 500;
         font-size: large;
     }
-
     nav .fa-solid {
         display: none;
     }
@@ -1080,7 +1082,6 @@ button img {
         display: flex;
         flex-direction: column;
     }
-
     .hero-content .h2 {
         text-align: center;
         align-items: center;
@@ -1093,42 +1094,35 @@ button img {
         color: #0D5F8E;
         font-weight: 500;
     }
-
     .hero-content .join {
         margin-left: 0;
         text-align: center;
         width: 95%;
         margin-left: 10px;
     }
-
     .hero-image {
         display: none;
     }
-
     .hero-frame {
         display: block;
         width: 100%;
     }
-
     .join p {
         font-size: 17px;
     }
-
     .hero-buttons {
         display: flex;
         margin-left: 15px;
     }
-
     .hero-buttons button {
         margin: 5px;
         border: none;
         cursor: pointer;
         background: none;
-        font-size: 16px;
+        font-size: 17px;
         font-weight: bold;
         color: #1286C8;
     }
-
     .hero-buttons button.highlight {
         border-radius: 40px;
         background-color: #3498db;
@@ -1138,72 +1132,54 @@ button img {
     }
 
 
+
     /* about services we provide  */
     .services {
         padding: 10px 15px;
     }
-
     .services .swp {
         display: flex;
         justify-content: center;
         margin: 1rem 0;
     }
-
-    .swp h2 {
-        font-size: 20px;
-    }
-    .services h2 {
-        font-size: xx-large;
-        font-weight: lighter;
-        font-weight: bold;
-    }
-
     .services-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
     .services-content img {
         width: 100%;
         margin-bottom: 20px;
     }
-
     .services-content .Doctors {
         display: none;
     }
-
     .services-content .doctor {
         display: block;
         width: 100%;
         margin-bottom: 3rem;
     }
-    
     .services-text {
         max-width: 100%;
         margin-left: 0;
     }
-    
     .services h2 {
-        font-size: xx-large;
+        font-size: 28px;
         font-weight: bold;
     }
-
     .services-text p {
         text-align: center;
         font-size: 17px;
     }
-
     .btn-content {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-
     .services button {
         padding: 15px 10px;
         margin: 10px;
-        font-size: 15px;
+        font-size: 17px;
     }
 
 
@@ -1214,20 +1190,10 @@ button img {
         flex-direction: column;
         align-items: center;
     }
-
     .card:first-child::before,
     .card:last-child::before {
         display: none;
     }
-
-    .card:first-child::before {
-        display: none;
-    }
-
-    .card:last-child::before {
-        display: none;
-    }
-
     .card {
         width: 90%;
         text-align: center;
@@ -1235,19 +1201,21 @@ button img {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         position: relative;
     }
-
     .card p {
         font-size: 17px;
     }
-
-    .card button {
-        padding: 15px 10px;
+    .cards .card button {
+        margin: 30px 80px;
+        padding: 15px 0px;
+        border: none;
+        border-radius: 40px;
+        background-color: #DEF2FE;
+        color: #107AB6;
         font-weight: bold;
-        font-size: 10px;
+        font-size: 17px;
+        cursor: pointer;
+        width: 50%;
     }
-
-
-
 
 
 
@@ -1257,33 +1225,33 @@ button img {
         justify-content: center;
         margin-bottom: 1rem;
     }
-
     .how-it-works .how-it-work h1 {
         font-size: 26px;
     }
-
     .how-it-works #steps {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
+    #steps {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+        gap: 0rem;
+    }
     .step {
         border-radius: 10px;
         padding: 0 5px;
         width: 97%;
     }
-
     .step h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
-
     .step h3 {
         font-size: 20px;
         margin: 0;
         padding: 1rem 0;
     }
-
     .step p {
         font-size: 17px;
     }
@@ -1294,23 +1262,19 @@ button img {
         margin-bottom: 3rem;
         padding: 0 10px;
     }
-
     #mental-health .img-content {
         display: none;
         height: 0rem;
     }
-
     #mental-health h2 {
         font-size: 26px;
         font-weight: bold;
         color: #0D5F8E;
         width: 100%;
     }
-
     #mental-health p {
         font-size: 17px;
     }
-
     .health-contain button {
         padding: 10px 10px;
         font-size: 17px;
@@ -1322,29 +1286,24 @@ button img {
         padding: 0 15px;
         margin-bottom: 3rem;
     }
-
     #about-us h2 {
         display: flex;
         justify-content: center;
         font-size: 26px;
     }
-
     #about-us h3 {
         display: flex;
         justify-content: center;
         font-size: 26px;
     }
-
     #about-us p {
         text-align: center;
         font-size: 17px;
     }
-
     #about-us strong {
         color: #1e93d7;
         font-size: 15px;
     }
-
     #about-us img {
         width: 100%;
     }
@@ -1357,42 +1316,34 @@ button img {
         gap: 1rem;
         flex-direction: column;
     }
-
     .join-section2-img {
         display: none;
     }
-
     .join-section5-img {
         padding: 0 15px;
         display: block;
     }
-
     .join-section2 .hold {
         padding: 0 20px;
         max-width: 100%;
     }
-
     .hold {
         width: 100%;
     }
-
     #who-we-are {
         border-bottom: 2px solid #B6B6B6;
     }
-
     #who-we-are h2 {
         display: flex;
         justify-content: center;
         font-size: 26px;
     }
-
     #who-we-are p {
         text-align: center;
         display: flex;
         margin: 0;
         font-size: 17px;
     }
-
     #who-we-are .btn4 {
         display: flex;
         flex-direction: column;
@@ -1401,7 +1352,6 @@ button img {
         justify-content: center;
         margin-left: 4rem;
     }
-
     .btn4 button {
         padding: 15px 10px;
         font-size: 16px;
@@ -1411,22 +1361,18 @@ button img {
         background: #FAFCFE;
         color: #107AB6;
     }
-
     .btn4 .highlight {
         background: #1286C8;
         border: none;
         color: #FFFFFF;
         padding: 15px 10px;
     }
-
     .btn4 .highlight:hover {
         background: #0056b3;
     }
-
     #offer {
         margin-bottom: 4rem;
     }
-
     #offer h2 {
         display: flex;
         justify-content: center;
@@ -1435,18 +1381,15 @@ button img {
         margin-top: 2rem;
         font-size: 24px;
     }
-
     #offer p {
         margin: 15px 0;
         font-size: 17px;
         gap: 30px;
     }
-
     #offer p img {
         width: 3rem;
         height: 3rem;
     }
-
     #offer strong {
         padding: 15px 0 0;
     }
@@ -1459,29 +1402,24 @@ button img {
         margin-top: 1rem;
         background: #F9FEFF;
     }
-
     .patient .patient-content {
         display: flex;
         flex-direction: column;
         gap: 0rem;
         margin-bottom: 0rem;
     }
-
     .patient h2 {
         text-align: center;
         font-size: 26px;
     }
-
     .content-hold p {
         text-align: center;
         font-size: 17px;
     }
-
     .badge-content {
         margin-left: 0rem;
         margin-bottom: 4rem;
     }
-
     .badge-content h5 {
         font-size: 17px;
     }
@@ -1492,28 +1430,24 @@ button img {
     .container3 {
         display: none;
     }
-
     .carousel-container {
         display: block;
         width: 100%;
         margin-bottom: 5rem;
     }
-
     .new-carousel-item {
         width: 100%;
         flex-shrink: 0;
         box-sizing: border-box;
         padding: 20px;
         opacity: 1;
-        /* Default appearance */
         transform: scale(1);
-        /* Default scale */
-    }
 
+    }
     .new-review-card {
         padding: 20px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-        height: 25rem;
+        height: 29rem;
     }
 
     .new-profile {
@@ -1521,41 +1455,34 @@ button img {
         align-items: center;
         margin-bottom: 10px;
     }
-
     .new-patient-1 {
         border-radius: 50%;
         width: 95px;
         height: 95px;
         margin-right: 15px;
     }
-
     .new-flex-all {
         display: flex;
         flex-direction: column;
     }
-
     .new-flex-all h4 {
         margin: 0;
         color: #0A4A6E;
         font-size: large;
     }
-
     .new-flex-all h3 {
         margin: 0;
         color: #0A4A6E;
         font-size: larger;
     }
-
     .new-stars img {
         width: 150px;
         /* Adjust size as needed */
     }
-
     .new-review-card p {
         font-size: 17px;
         color: #3C4047;
     }
-
     .carousel-container .view-all-btn,
     .close-btn {
         border-radius: 25px;
@@ -1575,26 +1502,21 @@ button img {
     .my-arrows {
         display: none;
     }
-
     .health-container {
         display: block;
         margin-bottom: 5rem;
     }
-
     .health-articles .article-item {
         display: none;
         margin-bottom: 3rem;
     }
-
     .health-articles .article-first1 {
         display: block;
     }
-
     .health-container {
         width: 100%;
         padding: 20px;
     }
-
     .health-container h2 {
         color: #0D5F8E;
         font-size: 27px;
@@ -1603,34 +1525,28 @@ button img {
         display: flex;
         justify-content: center;
     }
-
     .health-articles {
         width: 100%;
     }
-
     .article-item img {
         width: 100%;
         height: auto;
     }
-
     .article-item h3 {
         font-size: large;
         margin: 20px 0;
         color: #3C4047;
     }
-
     .article-item p {
         font-size: 0.9em;
         color: #3C4047;
         font-size: 17px;
     }
-
     .article-item .link-container {
         padding: 20px 0;
         display: flex;
         align-items: center;
     }
-
     .article-item .link-container a {
         display: flex;
         align-items: center;
@@ -1639,17 +1555,14 @@ button img {
         font-size: 20px;
         color: #359EBB;
     }
-
     .article-item .link-container a img {
         width: 20px;
         margin-left: 1rem;
     }
-
     .toggle-buttons {
         text-align: center;
         margin-top: 20px;
     }
-
     .toggle-buttons #hideAllBtn,
     #showAllBtn {
         border-radius: 25px;
@@ -1664,8 +1577,6 @@ button img {
     }
 
 
-
-
     /* all about footer   */
     .footer-left section {
         display: flex;
@@ -1673,7 +1584,6 @@ button img {
         align-items: center;
         margin: 2rem 0;
     }
-
     .footer-container {
         display: flex;
         justify-content: space-between;
@@ -1681,48 +1591,38 @@ button img {
         gap: 2rem;
         margin-bottom: 2rem;
     }
-
     .footer-left p {
         font-size: 17px;
     }
-
     .footer-right {
         width: 100%;
         margin-right: 0rem;
     }
-
     .footer-links {
         width: 100%;
     }
-
     .footer-links a {
         font-size: 16px;
     }
-
     .form-content {
         width: 100%;
         padding: 0px 0;
     }
-
     .newsletter form {
         padding: 3px;
     }
-
     .newsletter p {
         font-size: 17px;
     }
-
     .form-content form input {
         width: 10rem;
         font-size: 16px;
     }
-
     .form-content form button {
         width: 10rem;
         font-size: 16px;
         padding: 15px 5px;
     }
-
     .img-contain {
         display: none;
     }

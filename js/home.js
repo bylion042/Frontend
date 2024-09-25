@@ -40,7 +40,9 @@ function updateActiveItem() {
 function swapNewLeft() {
     const articles = document.querySelector('.new-articles');
     const items = Array.from(articles.children);
-    articles.appendChild(items[0]); // Move the first item to the end
+    // articles.appendChild(items[0]); // Move the first item to the end
+    articles.insertBefore(items[items.length - 1], items[0]); // Move the last item to the front
+    
 
     // Update the active item after moving
     updateActiveItem();
@@ -49,7 +51,8 @@ function swapNewLeft() {
 function swapNewRight() {
     const articles = document.querySelector('.new-articles');
     const items = Array.from(articles.children);
-    articles.insertBefore(items[items.length - 1], items[0]); // Move the last item to the front
+    articles.appendChild(items[0]); // Move the first item to the end
+    // articles.insertBefore(items[items.length - 1], items[0]); // Move the last item to the front
 
     // Update the active item after moving
     updateActiveItem();
