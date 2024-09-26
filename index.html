@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pro-Health</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/home.css" />
 </head>
 
@@ -18,8 +19,8 @@
     <i class="fa-solid fa-bars"></i>
   </section>
 
-  <!-- all about header  -->
 
+  <!-- all about header  -->
   <header>
     <div class="header-content">
       <a href="#">
@@ -86,6 +87,7 @@
 
 
 
+  <!-- Services we Provide -->
   <section id="join-section">
     <section class="services">
       <div class="swp">
@@ -122,8 +124,12 @@
           Connect with licensed therapists and counselors for confidential and
           compassionate care.
         </p>
-        <button class="highlight">Start Consultation</button>
+
+        <div class="get-card">
+          <button class="highlight">Start Consultation</button>
+        </div>
       </div>
+
       <div class="card">
         <img src="./img/Frame 162 (1).png" />
         <h3>Mental Health Services</h3>
@@ -132,8 +138,13 @@
           Connect with licensed therapists and counselors for confidential and
           compassionate care.
         </p>
-        <button class="highlight">Get Instant Help</button>
+
+        <div class="get-card">
+          <button class="highlight">Get Instant Help</button>
+        </div>
+
       </div>
+
       <div class="card">
         <img src="./img/Frame 162.png" />
         <h3>Emergency Services</h3>
@@ -142,8 +153,13 @@
           Connect with licensed therapists and counselors for confidential and
           compassionate care.
         </p>
-        <button class="highlight">Get Instant Help</button>
+
+        <div class="get-card">
+          <button class="highlight">Get Instant Help</button>
+        </div>
+
       </div>
+
     </section>
   </section>
 
@@ -196,6 +212,7 @@
     </section>
   </section>
 
+
   <section id="mental-health">
     <div class="img-content">
       <img src="./img/minimalistic-science-banner-with-stethoscope 222.png" width="105%" />
@@ -219,6 +236,7 @@
     </div>
   </section>
 
+
   <section id="about-us">
     <h2>About Us</h2>
     <img src="./img/Frame 173.png" alt="Team" />
@@ -235,6 +253,7 @@
     </p>
   </section>
   <br />
+
 
   <div class="join-section2">
     <img class="join-section5-img" src="./img/Frame 178.png" />
@@ -266,20 +285,23 @@
       <section id="offer">
         <h2>What we Offer</h2>
         <p>
-          <img src="./img/Frame 182.png" width="70px" height="70px"/><strong>24/7 Patient-Centered Care</strong>
+          <img src="./img/Frame 182.png" width="70px" height="70px" /><strong>24/7 Patient-Centered Care</strong>
         </p>
         <p>
-          <img src="./img/Frame 182 (1).png" width="70px" height="70px"/><strong>24/7 Privacy and Security</strong>
+          <img src="./img/Frame 182 (1).png" width="70px" height="70px" /><strong>24/7 Privacy and Security</strong>
         </p>
         <p>
-          <img src="./img/Frame 182 (2).png" width="70px" height="70px"/><strong>24/7 Consultant Accessibility</strong>
+          <img src="./img/Frame 182 (2).png" width="70px" height="70px" /><strong>24/7 Consultant Accessibility</strong>
         </p>
         <p>
-          <img src="./img/Frame 182 (1).png" width="70px" height="70px"/><strong>24/7 Innovation With Technology</strong>
+          <img src="./img/Frame 182 (1).png" width="70px" height="70px" /><strong>24/7 Innovation With
+            Technology</strong>
         </p>
       </section>
     </div>
   </div>
+
+
 
   <section class="patient">
     <div class="patient-content">
@@ -413,8 +435,9 @@
     </div>
 
     <!-- View All Button -->
-    <button class="view-all-btn" onclick="showAllItems()">View All</button>
-
+    <div class="toggle-buttons1">
+      <button class="view-all-btn" onclick="showAllItems()">View All</button>
+    </div>
     <!-- Hidden items -->
     <div class="hidden-items" style="display: none">
       <!-- Repeat the above item 5 more times -->
@@ -534,13 +557,14 @@
       </div>
 
       <!-- Close Button -->
-      <button class="close-btn" onclick="hideAllItems()">Close All</button>
+      <div class="toggle-buttons1">
+        <button class="close-btn" onclick="hideAllItems()">Close All</button>
+      </div>
+
     </div>
   </div>
 
 
-
-  
   <!--  ALL ABOUT Wellness Article for You -->
   <div class="container4">
     <h2>Health Article</h2>
@@ -638,7 +662,7 @@
             <img src="./img/Group.png" width="30" height="50" /></a>
         </div>
       </div>
-      
+
     </section>
   </div>
 
@@ -649,7 +673,6 @@
   </div>
 
 
-  
   <!--  ALL ABOUT Wellness Article for SMALL SCRENS -->
   <div class="health-container">
     <h2>Health Article</h2>
@@ -708,7 +731,6 @@
 
 
 
-
   <!-- ALL ABOUT FOOTER  -->
   <footer class="footer">
     <div class="footer-container">
@@ -726,18 +748,10 @@
           experience.
         </p>
         <div class="social-icons">
-          <a href="#"
-            ><img src="./img/Facebook.png" alt="Facebook"
-          /></a>
-          <a href="#"
-            ><img src="./img/twitter.png" alt="Twitter"
-          /></a>
-          <a href="#"
-            ><img src="./img/linkedin.png" alt="LinkedIn"
-          /></a>
-          <a href="#"
-            ><img src="./img/instagram.png" alt="Instagram"
-          /></a>
+          <a href="#"><img src="./img/Facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" /></a>
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="./img/instagram.png" alt="Instagram" /></a>
         </div>
       </div>
       <div class="footer-right">
@@ -747,8 +761,8 @@
           <a href="#">Privacy Policy</a>
           <a href="#">Health Articles</a>
           <a href="#">About Us</a> <br />
-          
-          <br/>
+
+          <br />
           <a href="#">Patient Rights and Responsibilities</a>
           <a href="#">News and Update</a>
           <a href="#">Terms and Conditions</a>
@@ -783,7 +797,7 @@
     <div class="footer-bottom">
       <img src="./img/Frame 220.png" alt="" />
     </div>
-</footer>
+  </footer>
 
 
 
